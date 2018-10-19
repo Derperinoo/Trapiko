@@ -7,6 +7,7 @@ const axios = require('axios');
 const https = require('https');
 const BootBot = require('bootbot')
 
+
 const app = express()
 
 app.set('port', (process.env.PORT || 5000))
@@ -20,7 +21,6 @@ app.get('/', function(req, res) {
 	res.send("Hi I am a chatbot")
 })
 
-
 app.get('/equirino',function(_req, _res){
 
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
@@ -30,7 +30,8 @@ app.get('/equirino',function(_req, _res){
 	 	const jf2 = body.RWS[0].RW[39].FIS[0].FI[0].CF[0].JF;
 	 	const jf3 = body.RWS[0].RW[36].FIS[0].FI[0].CF[0].JF;
 	 	const jf4 = body.RWS[0].RW[37].FIS[0].FI[1].CF[0].JF;
-		const jf5 = body.RWS[0].RW[27].FIS[0].FI[1].CF[0].JF;
+		//const jf5 = body.RWS[0].RW[27].FIS[0].FI[2].CF[0].JF;
+		//const jf5 = body.RWS[0].RW[27].FIS[0].FI[2].CF[0].JF;
 		const jf6 = body.RWS[0].RW[4].FIS[0].FI[0].CF[0].JF;
 		const jf7 = body.RWS[0].RW[5].FIS[0].FI[13].CF[0].JF;
 	//  equirinosouth
@@ -65,8 +66,8 @@ app.get('/equirino',function(_req, _res){
 	  	const macc = body.RWS[0].RW[1].FIS[0].FI[4].TMC.DE;
 	  	const macjf = body.RWS[0].RW[1].FIS[0].FI[4].CF[0].JF;
 	  	//north
-	  	var x = 7
-	  	var nf = jf1+jf2+jf3+jf4+jf5+jf6+jf7;
+	  	var x = 6
+	  	var nf = jf1+jf2+jf3+jf4+jf6+jf7;
 		var njf = nf/x;
 		//south
 		var y = 5
@@ -235,19 +236,19 @@ app.get('/jp',function(_req, _res){
 	  if (err) { return console.log(err); }
 	  	//jplaurel south
 	  	const soth = body.RWS[0].RW[2].DE;
-	  	const jf1 = body.RWS[0].RW[76].FIS[0].FI[3].CF[0].JF;
-	  	const jf2 = body.RWS[0].RW[63].FIS[0].FI[2].CF[0].JF;
+	//  	const jf1 = body.RWS[0].RW[76].FIS[0].FI[3].CF[0].JF;
+	  //	const jf2 = body.RWS[0].RW[63].FIS[0].FI[2].CF[0].JF;
 	  	const jf3 = body.RWS[0].RW[56].FIS[0].FI[1].CF[0].JF;
 	  	const jf4 = body.RWS[0].RW[49].FIS[0].FI[0].CF[0].JF;
 	  	const jf5 = body.RWS[0].RW[43].FIS[0].FI[2].CF[0].JF;
-	  	const jf6 = body.RWS[0].RW[41].FIS[0].FI[1].CF[0].JF;
+	  	//const jf6 = body.RWS[0].RW[41].FIS[0].FI[1].CF[0].JF;
 	  	const jf7 = body.RWS[0].RW[30].FIS[0].FI[0].CF[0].JF;
 	  	const jf8 = body.RWS[0].RW[24].FIS[0].FI[0].CF[0].JF;
 	  	const jf9 = body.RWS[0].RW[20].FIS[0].FI[0].CF[0].JF;
-	  	var n = 9
-	  	var x = jf1 + jf2 + jf3 + jf4 + jf5 + jf6 + jf7 + jf8 + jf9;
+	  	var n = 6
+	  	var x =   jf3 + jf4 + jf5 + jf7 + jf8 + jf9;
 	  	var northh = x/n;
-	  	//jplaurel north
+	  	//nort
 	  	const nor = body.RWS[0].RW[3].DE;
 	  	const jf01 = body.RWS[0].RW[78].FIS[0].FI[0].CF[0].JF;
 	  	const jf02 = body.RWS[0].RW[66].FIS[0].FI[0].CF[0].JF;
@@ -474,15 +475,15 @@ app.get('/mcarthur',function(_req, _res){
 	  	const south = body.RWS[0].RW[4].DE;
 	  	const jf1 = body.RWS[0].RW[73].FIS[0].FI[1].CF[0].JF;
 	  	const jf2 = body.RWS[0].RW[61].FIS[0].FI[1].CF[0].JF;
-	  	const jf3 = body.RWS[0].RW[59].FIS[0].FI[2].CF[0].JF;
+	//  	const jf3 = body.RWS[0].RW[59].FIS[0].FI[2].CF[0].JF;
 	  	const jf4 = body.RWS[0].RW[61].FIS[0].FI[0].CF[0].JF;
 	  	const jf5 = body.RWS[0].RW[17].FIS[0].FI[3].CF[0].JF;
 	  	const jf6 = body.RWS[0].RW[14].FIS[0].FI[0].CF[0].JF;
 	  	const jf7 = body.RWS[0].RW[13].FIS[0].FI[0].CF[0].JF;
 	  	const jf8 = body.RWS[0].RW[9].FIS[0].FI[0].CF[0].JF;
 	  	const jf9 = body.RWS[0].RW[0].FIS[0].FI[0].CF[0].JF;
-	  	var sn = 9
-	  	var s = jf1 + jf2 + jf3 + jf4 + jf5 + jf6 + jf7 + jf8 + jf9;
+	  	var sn = 8
+	  	var s = jf1 + jf2  + jf4 + jf5 + jf6 + jf7 + jf8 + jf9;
 	  	var ss = s/sn;
 	  	//mcarthur south intersections
 	  	const quirino = body.RWS[0].RW[4].FIS[0].FI[0].TMC.DE;
@@ -948,11 +949,11 @@ app.get('/ecowestdr',function(_req, _res){
 	  
 	  //ecowestdr south
 		  const south = body.RWS[0].RW[6].DE;
-		  const jf1 = body.RWS[0].RW[17].FIS[0].FI[2].CF[0].JF;
+		//  const jf1 = body.RWS[0].RW[17].FIS[0].FI[2].CF[0].JF;
 		  const jf2 = body.RWS[0].RW[8].FIS[0].FI[2].CF[0].JF;
-		  const jf3 = body.RWS[0].RW[9].FIS[0].FI[3].CF[0].JF;
-		  var s = 3
-		  var ss = jf1 + jf2 + jf3;
+		 // const jf3 = body.RWS[0].RW[9].FIS[0].FI[3].CF[0].JF;
+		  var s = 1
+		  var ss =  jf2 ;
 		  var ssouth = ss/s; 
 	  
 		//south Quimpo Blvd, Ecoland Dr/Ecoland
@@ -968,13 +969,13 @@ app.get('/ecowestdr',function(_req, _res){
 		const jf0002 = body.RWS[0].RW[7].FIS[0].FI[1].CF[0].JF;
 	  	
 	  //ecowestdr north
-	  const north = body.RWS[0].RW[7].DE;
-	  const jf01 = body.RWS[0].RW[17].FIS[0].FI[2].CF[0].JF;
+	 const north = body.RWS[0].RW[7].DE;
+	 // const jf01 = body.RWS[0].RW[17].FIS[0].FI[2].CF[0].JF;
 	  const jf02 = body.RWS[0].RW[11].FIS[0].FI[0].CF[0].JF;
 	  const jf03 = body.RWS[0].RW[10].FIS[0].FI[0].CF[0].JF;
-
-	  var nn = jf01 + jf02 + jf03;
-	  var nnourth = nn/s;
+  var vn = 2
+	  var nn =  jf02 + jf03;
+	  var nnourth = nn/vn;
 
 	  	let South = "";
 	  	if(ss == 0 || ss < 4){
@@ -1001,7 +1002,7 @@ app.get('/ecowestdr',function(_req, _res){
 	  		North = "Cannot compute"
 	  	}
 	  	let eqq = "";
-	  	if(jf11 == 0 || jf1 < 4){
+	  	if(jf11 == 0 || jf11 < 4){
 	  	eqq = "Quimpo Blvd South Bound lane is Free flow of traffic.";
 	  	}else if(jf11 == 4 || jf11 < 8){
 	  		eqq = "Quimpo Blvd South Bound lane is Sluggish flow of traffic.";
@@ -1065,7 +1066,9 @@ app.get('/ecoland',function(_req, _res){
 	  if (err) { return console.log(err); }
 	  
 	  	//ecoland south
-	  	const south = body.RWS[0].RW[8].DE;
+	  	const south1 = body.RWS[0].RW[11].DE;
+	
+	  //	const south1 = body.RWS[0].RW[8].DE;
 	  	const jf1 = body.RWS[0].RW[18].FIS[0].FI[4].CF[0].JF;
 	  	const jf2 = body.RWS[0].RW[17].FIS[0].FI[0].CF[0].JF;
 	  	const jf3 = body.RWS[0].RW[13].FIS[0].FI[2].CF[0].JF;
@@ -1083,9 +1086,9 @@ app.get('/ecoland',function(_req, _res){
 	  	var ss = s/es;
 
 	  	//ecoland north
-	  	const north = body.RWS[0].RW[11].DE;
+	  	const north1 = body.RWS[0].RW[11].DE;
 	  	const jf01 = body.RWS[0].RW[19].FIS[0].FI[0].CF[0].JF;
-	  	const jf02 = body.RWS[0].RW[15].FIS[0].FI[3].CF[0].JF;
+	  //	const jf02 = body.RWS[0].RW[15].FIS[0].FI[3].CF[0].JF;
 	  	const jf03 = body.RWS[0].RW[12].FIS[0].FI[0].CF[0].JF;
 	  	const jf04 = body.RWS[0].RW[7].FIS[0].FI[0].CF[0].JF;
 	  	//ecoland north intersections
@@ -1095,9 +1098,9 @@ app.get('/ecoland',function(_req, _res){
 	  	const jf0002 = body.RWS[0].RW[11].FIS[0].FI[1].CF[0].JF;
 	  	const quuuuu = body.RWS[0].RW[11].FIS[0].FI[2].TMC.DE;
 	  	const jf0003= body.RWS[0].RW[11].FIS[0].FI[2].CF[0].JF;
-
-	  	var en = jf01 + jf02 + jf03 + jf04;
-	  	var nn = en/es;
+	  	var eeees = 3
+	  	var en = jf01  + jf03 + jf04;
+	  	var nn = en/eeees;
 	  	
 	  	let ssouth = "";
 	  	if(ss == 0 || ss < 4){
@@ -1198,7 +1201,7 @@ app.get('/ecoland',function(_req, _res){
 	  	}
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({south:south,ss:ss,quim:quim,jf001:jf001,tulli:tulli,jf002:jf002,Ecc:Ecc,jf003:jf003,ssouth:ssouth,QQ:QQ,tulili:tulili,dr:dr,north:north,nn:nn,eccccc:eccccc, jf0001:jf0001,
+    	_res.send(JSON.stringify({south1:south1,ss:ss,quim:quim,jf001:jf001,tulli:tulli,jf002:jf002,Ecc:Ecc,jf003:jf003,ssouth:ssouth,QQ:QQ,tulili:tulili,dr:dr,north1:north1,nn:nn,eccccc:eccccc, jf0001:jf0001,
     	tuuuuu:tuuuuu,jf0002:jf0002,quuuuu:quuuuu, jf0003:jf0003,     nnorth:nnorth,ecoeco:ecoeco   ,tueli:tueli,queem:queem }));
 	
 	});
@@ -1210,7 +1213,8 @@ app.get('/matina',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	//matina pangi/aplaya south
-	  	const south = body.RWS[0].RW[9].DE;
+	  	const south2 = body.RWS[0].RW[10].DE;
+	  //	const south2 = body.RWS[0].RW[9].DE;
 	  	const jf1 = body.RWS[0].RW[52].FIS[0].FI[5].CF[0].JF;
 	  	const jf2 = body.RWS[0].RW[4].FIS[0].FI[7].CF[0].JF;
 	  	var m = 2
@@ -1236,8 +1240,8 @@ app.get('/matina',function(_req, _res){
 	  	const jf002 = body.RWS[0].RW[9].FIS[0].FI[1].CF[0].JF;
 	  	const Punta = body.RWS[0].RW[9].FIS[0].FI[2].TMC.DE;
 	  	const jf003 = body.RWS[0].RW[9].FIS[0].FI[2].CF[0].JF;
-	  	const Ecoeco = body.RWS[0].RW[9].FIS[0].FI[3].TMC.DE;
-	  	const jf004 = body.RWS[0].RW[9].FIS[0].FI[3].CF[0].JF;
+	  	const Ecoeco = body.RWS[0].RW[9].FIS[0].FI[2].TMC.DE;
+	  	//const jf004 = body.RWS[0].RW[9].FIS[0].FI[3].CF[0].JF;
 
 	  	let mmc = "";
 	  	if(jf001 == 0 || jf001 < 4){
@@ -1275,18 +1279,7 @@ app.get('/matina',function(_req, _res){
 	  	}else{
 	  		ppun = "Cannot compute"
 	  	}
-	  	let ecece = "";
-	  	if(jf004 == 0 || jf004 < 4){
-	  	ecece = "Eco West Dr South bound lane is Free flow of traffic.";
-	  	}else if(jf004 == 4 || jf004 < 8){
-	  		ecece = "Eco West Dr South bound lane is Sluggish flow of traffic.";
-	  	}else if(jf004 == 8 || jf004 < 10){
-	  		ecece = "Eco West Dr South bound lane is Slow flow of traffic.";
-	  	}else if(jf004 == 10){
-	  		ecece = "Eco West Dr South bound lane is Traffic stopped or Road closed."
-	  	}else{
-	  		ecece = "Cannot compute"
-	  	}
+	  
 
 	  	//#######################################################
 	  	//matina pangi/aplaya north intesections
@@ -1300,7 +1293,8 @@ app.get('/matina',function(_req, _res){
 	  	const jf0004 = body.RWS[0].RW[10].FIS[0].FI[3].CF[0].JF;
 
 	  	//matina pangi/aplaya north
-	  	const north = body.RWS[0].RW[9].DE;
+	  		const north2 = body.RWS[0].RW[10].DE;
+	  //	const north2 = body.RWS[0].RW[9].DE;
 	  	const jf01 = body.RWS[0].RW[53].FIS[0].FI[1].CF[0].JF;
 	  	const jf02 = body.RWS[0].RW[5].FIS[0].FI[6].CF[0].JF;
 	  	var ma = jf01 + jf02;
@@ -1368,7 +1362,7 @@ app.get('/matina',function(_req, _res){
 	  		mmmac = "Cannot compute"
 	  	}
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({south:south,mmm:mmm,mac:mac,jf001:jf001,jas:jas,jf002:jf002,Punta:Punta,jf003:jf003,Ecoeco:Ecoeco,jf004:jf004,nert:nert,mmc:mmc,jjas:jjas,ppun:ppun,ecece:ecece,north:north,maaa:maaa,
+    	_res.send(JSON.stringify({south2:south2,mmm:mmm,mac:mac,jf001:jf001,jas:jas,jf002:jf002,Punta:Punta,jf003:jf003,nert:nert,mmc:mmc,jjas:jjas,ppun:ppun,north2:north2,maaa:maaa,
     	echo:echo,jf0001:jf0001,ppp:ppp,jf0002:jf0002,jjj:jjj,jf0003:jf0003,mmma:mmma,jf0004:jf0004,     seot:seot,wwe:wwe,ppu:ppu,jja:jja,mmmac:mmmac}));
 	
 	});
@@ -1454,11 +1448,12 @@ app.get('/tulipdr',function(_req, _res){
 		  	const jf0003 = body.RWS[0].RW[12].FIS[0].FI[2].CF[0].JF;
 	  		//tulip north
 	  		const noort = body.RWS[0].RW[12].DE;
-	  		const jf001 = body.RWS[0].RW[15].FIS[0].FI[2].CF[0].JF;
+	  	//	const jf001 = body.RWS[0].RW[15].FIS[0].FI[2].CF[0].JF;
 	  		const jf002 = body.RWS[0].RW[11].FIS[0].FI[1].CF[0].JF;
 	  		const jf003 = body.RWS[0].RW[5].FIS[0].FI[9].CF[0].JF;
-	  		var non = jf001 + jf002 + jf003;
-	  		var nonn = non/so;
+	  		var y = 2
+	  		var non =  jf002 + jf003;
+	  		var nonn = non/y;
 	  		
 	  		let nnor = "";
 		  	if(nonn == 0 || nonn < 4){
@@ -1523,7 +1518,8 @@ app.get('/sandawa',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  		//sandawa south
-	  		const ssouth = body.RWS[0].RW[14].DE;
+	  			const ssouth = body.RWS[0].RW[16].DE;
+	  		//const ssouth = body.RWS[0].RW[14].DE;
 	  		const jf1 = body.RWS[0].RW[18].FIS[0].FI[3].CF[0].JF;
 	  		const jf2 = body.RWS[0].RW[4].FIS[0].FI[2].CF[0].JF;
 	  		var ses = 2
@@ -1573,6 +1569,7 @@ app.get('/sandawa',function(_req, _res){
 		  	}
 	  		//sandawa north
 	  		const nnort = body.RWS[0].RW[16].DE;
+	  		//const nnort = body.RWS[0].RW[16].DE;
 	  		const jf001 = body.RWS[0].RW[19].FIS[0].FI[1].CF[0].JF;
 	  		const jf002 = body.RWS[0].RW[5].FIS[0].FI[11].CF[0].JF;
 	  		var sses = jf001 + jf002;
@@ -1650,7 +1647,6 @@ app.get('/quimpoblvd',function(_req, _res){
 		  	const jf001 = body.RWS[0].RW[15].FIS[0].FI[0].CF[0].JF;  	
 		  	const ttL = body.RWS[0].RW[15].FIS[0].FI[1].TMC.DE;
 		  	const jf002 = body.RWS[0].RW[15].FIS[0].FI[1].CF[0].JF;
-		    const ecw = body.RWS[0].RW[15].FIS[0].FI[2].TMC.DE;
 		  	const jf003 = body.RWS[0].RW[15].FIS[0].FI[2].CF[0].JF;
 		  	const hwy = body.RWS[0].RW[15].FIS[0].FI[3].TMC.DE;
 		  	const jf004 = body.RWS[0].RW[15].FIS[0].FI[3].CF[0].JF;
@@ -1799,7 +1795,7 @@ app.get('/quimpoblvd',function(_req, _res){
 		  	}
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({ssouth:ssouth,nno:nno,ecC:ecC,jf001:jf001,ttL:ttL,jf002:jf002,ecw:ecw,jf003:jf003,hwy:hwy,jf004:jf004,
+    	_res.send(JSON.stringify({ssouth:ssouth,nno:nno,ecC:ecC,jf001:jf001,ttL:ttL,jf002:jf002,jf003:jf003,hwy:hwy,jf004:jf004,
     	south:south,mcc:mcc,tll:tll,ecc:ecc,mmM:mmM,nnorthh:nnorthh,sso:sso,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,intc3:intc3,jfc3:jfc3,
     	intc4:intc4,jfc4:jfc4,            north:north,maaaa:maaaa,ec0000:ec0000,tulll:tulll,eccoow:eccoow               }));
 	
@@ -1813,11 +1809,11 @@ app.get('/quezonblvd',function(_req, _res){
 	  if (err) { return console.log(err); }  
 	  		//quezon blvd south
 	  		const quezon1 = body.RWS[0].RW[18].DE;
-	  		const jf1 = body.RWS[0].RW[27].FIS[0].FI[4].CF[0].JF;
+	  //		const jf1 = body.RWS[0].RW[27].FIS[0].FI[4].CF[0].JF;
 	  		const jf2 = body.RWS[0].RW[14].FIS[0].FI[1].CF[0].JF;
 	  		const jf3 = body.RWS[0].RW[8].FIS[0].FI[0].CF[0].JF;
-	  		var q = 3
-	  		var qq = jf1 + jf2 + jf3;
+	  		var q = 2
+	  		var qq =  jf2 + jf3;
 	  		var qe = qq/q;
 	  		//quezon blvd south intersections
 			  	const intc1 = body.RWS[0].RW[18].FIS[0].FI[0].TMC.DE;
@@ -1909,8 +1905,9 @@ app.get('/quezonblvd',function(_req, _res){
 	  		const jf01 = body.RWS[0].RW[28].FIS[0].FI[0].CF[0].JF;
 			const jf02 = body.RWS[0].RW[16].FIS[0].FI[0].CF[0].JF;
 			const jf03 = body.RWS[0].RW[11].FIS[0].FI[2].CF[0].JF;
+			var beb = 3
 			var b = jf01 + jf02 + jf03;
-			var bb = b/q;
+			var bb = b/beb;
 
 			//quezon blvd north intersections
 				const Ec = body.RWS[0].RW[19].FIS[0].FI[0].TMC.DE;
@@ -2060,7 +2057,7 @@ app.get('/cabaguio',function(_req, _res){
 		  		llp = "Cannot compute"
 		  	}
 	  		//cabaguio north
-	  		const north = body.RWS[0].RW[23].DE;
+	  		const north3 = body.RWS[0].RW[23].DE;
 	  		const cab1 = body.RWS[0].RW[3].FIS[0].FI[2].CF[0].JF;
 	  		//cabaguio north intersections
 	  		const intc1 = body.RWS[0].RW[23].FIS[0].FI[0].TMC.DE;
@@ -2109,7 +2106,7 @@ app.get('/cabaguio',function(_req, _res){
 
 	  	_res.setHeader('Content-Type', 'application/json');
     	_res.send(JSON.stringify({south:south,cab:cab,jp:jp,jfc1:jfc1,lap:lap,jfc2:jfc2,      ssouth:ssouth,jjp:jjp,llp:llp,           
-    		north:north,cab1:cab1,intc1:intc1,jfc01:jfc01,intc2:intc2,jfc02:jfc02,       nnort:nnort,aal:aal,jpp:jpp}));
+    		north3:north3,cab1:cab1,intc1:intc1,jfc01:jfc01,intc2:intc2,jfc02:jfc02,       nnort:nnort,aal:aal,jpp:jpp}));
 	
 	});
 
@@ -2119,26 +2116,26 @@ app.get('/cabaguio',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  		//cabaguio south
-	  		const south = body.RWS[0].RW[21].DE;
+	  		const msouth = body.RWS[0].RW[21].DE;
 	  		const jf1 = body.RWS[0].RW[41].FIS[0].FI[0].CF[0].JF;
 	  		const jf2 = body.RWS[0].RW[35].FIS[0].FI[2].CF[0].JF;
-	 		const jf3 = body.RWS[0].RW[31].FIS[0].FI[2].CF[0].JF;
-	 		var j = 3
-	 		var ca = jf1 + jf2 + jf3;
+	 		//const jf3 = body.RWS[0].RW[31].FIS[0].FI[2].CF[0].JF;
+	 		var j = 2
+	 		var ca = jf1 + jf2;
 	 		var cab = ca/j;
 	 		//cabaguio south intersections
 	 		const intc1 = body.RWS[0].RW[21].FIS[0].FI[0].TMC.DE;
 		  	const jfc1 = body.RWS[0].RW[21].FIS[0].FI[0].CF[0].JF;
      	  	const intc2 = body.RWS[0].RW[21].FIS[0].FI[1].TMC.DE;
 		  	const jfc2 = body.RWS[0].RW[21].FIS[0].FI[1].CF[0].JF;
-		  	const intc3 = body.RWS[0].RW[21].FIS[0].FI[2].TMC.DE;
-		  	const jfc3 = body.RWS[0].RW[21].FIS[0].FI[2].CF[0].JF;
-		  	const intc4 = body.RWS[0].RW[21].FIS[0].FI[3].TMC.DE;
-		  	const jfc4 = body.RWS[0].RW[21].FIS[0].FI[3].CF[0].JF;
-		  	const intc5 = body.RWS[0].RW[21].FIS[0].FI[4].TMC.DE;
-		  	const jfc5 = body.RWS[0].RW[21].FIS[0].FI[4].CF[0].JF;
-		  	const intc6 = body.RWS[0].RW[21].FIS[0].FI[5].TMC.DE;
-		  	const jfc6 = body.RWS[0].RW[21].FIS[0].FI[5].CF[0].JF;
+		  //	const intc3 = body.RWS[0].RW[21].FIS[0].FI[2].TMC.DE;
+		//  	const jfc3 = body.RWS[0].RW[21].FIS[0].FI[2].CF[0].JF;
+		//  	const intc4 = body.RWS[0].RW[21].FIS[0].FI[3].TMC.DE;
+		//  	const jfc4 = body.RWS[0].RW[21].FIS[0].FI[3].CF[0].JF;
+		//  	const intc5 = body.RWS[0].RW[21].FIS[0].FI[4].TMC.DE;
+		  //	const jfc5 = body.RWS[0].RW[21].FIS[0].FI[4].CF[0].JF;
+		//  	const intc6 = body.RWS[0].RW[21].FIS[0].FI[5].TMC.DE;
+		 // 	const jfc6 = body.RWS[0].RW[21].FIS[0].FI[5].CF[0].JF;
 			
 			let sourth = "";
 		  	if(cab == 0 || cab < 4){
@@ -2176,61 +2173,16 @@ app.get('/cabaguio',function(_req, _res){
 		  	}else{
 		  		ssta = "Cannot compute"
 		  	}
-		  	let rm = "";
-		  	if(jfc3 == 0 || jfc3 < 4){
-		  	rm = "R. Magsaysay Ave South bound lane is Free flow of traffic.";
-		  	}else if(jfc3 == 4 || jfc3 < 8){
-		  	rm = "R. Magsaysay Ave South bound lane is Sluggish flow of traffic.";
-		  	}else if(jfc3 == 8 || jfc3 < 10){
-		  	rm = "R. Magsaysay Ave South bound lane is Slow flow of traffic.";
-		  	}else if(jfc3 == 10){
-		  	rm = "R. Magsaysay Ave South bound lane is Traffic stopped or Road closed."
-		  	}else{
-		  		rm = "Cannot compute"
-		  	}
-		  	let mr = "";
-		  	if(jfc4 == 0 || jfc4 < 4){
-		  	mr = "M. Roxas South bound lane is Free flow of traffic.";
-		  	}else if(jfc4 == 4 || jfc4 < 8){
-		  	mr = "M. Roxas South bound lane is Sluggish flow of traffic.";
-		  	}else if(jfc4 == 8 || jfc4 < 10){
-		  	mr = "M. Roxas South bound lane is Slow flow of traffic.";
-		  	}else if(jfc4 == 10){
-		  	mr = "M. Roxas South bound lane is Traffic stopped or Road closed."
-		  	}else{
-		  		mr = "Cannot compute"
-		  	}
-		  	let ab = "";
-		  	if(jfc5 == 0 || jfc5 < 4){
-		  	ab = "A. Bonifacio St South bound lane is Free flow of traffic.";
-		  	}else if(jfc5 == 4 || jfc5 < 8){
-		  	ab = "A. Bonifacio St South bound lane is Sluggish flow of traffic.";
-		  	}else if(jfc5 == 8 || jfc5 < 10){
-		  	ab = "A. Bonifacio St South bound lane is Slow flow of traffic.";
-		  	}else if(jfc5 == 10){
-		  	ab = "A. Bonifacio St South bound lane is Traffic stopped or Road closed."
-		  	}else{
-		  		ab = "Cannot compute"
-		  	}
-		  	let ss = "";
-		  	if(jfc6 == 0 || jfc6 < 4){
-		  	ss = "San Pedro St South bound lane is Free flow of traffic.";
-		  	}else if(jfc6 == 4 || jfc6 < 8){
-		  	ss = "San Pedro St South bound lane is Sluggish flow of traffic.";
-		  	}else if(jfc6 == 8 || jfc6 < 10){
-		  	ss = "San Pedro St South bound lane is Slow flow of traffic.";
-		  	}else if(jfc6 == 10){
-		  	ss = "San Pedro St South bound lane is Traffic stopped or Road closed."
-		  	}else{
-		  		ss = "Cannot compute"
-		  	}
+		
+		  
 	  		//cabaguio north
 	  		const north = body.RWS[0].RW[22].DE;
 	  		const jf01 = body.RWS[0].RW[42].FIS[0].FI[2].CF[0].JF;
 	  		const jf02 = body.RWS[0].RW[34].FIS[0].FI[0].CF[0].JF;
 	  		const jf03 = body.RWS[0].RW[33].FIS[0].FI[0].CF[0].JF;
+	  		var jj = 3
 	  		var cc = jf01 + jf02 + jf03;
-	  		var  cCc = cc/j;
+	  		var  cCc = cc/jj;
 	  		//cabaguio north intersections
 	  		const int1 = body.RWS[0].RW[22].FIS[0].FI[0].TMC.DE;
 		  	const jf001 = body.RWS[0].RW[22].FIS[0].FI[0].CF[0].JF;	  	
@@ -2331,9 +2283,9 @@ app.get('/cabaguio',function(_req, _res){
 		  	}
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({south:south,cab:cab,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,intc3:intc3,jfc3:jfc3,
-    		intc4:intc4,jfc4:jfc4,intc5:intc5,jfc5:jfc5,intc6:intc6,jfc6:jfc6,sourth:sourth,laps:laps,ssta:ssta,rm:rm,mr:mr,
-    		ab:ab,ss:ss,north:north,cc:cc,int1:int1,jf001:jf001,int2:int2,jf002:jf002,int3:int3,jf003:jf003,
+    	_res.send(JSON.stringify({msouth:msouth,cab:cab,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,
+    		sourth:sourth,laps:laps,ssta:ssta,
+    		north:north,cCc:cCc,int1:int1,jf001:jf001,int2:int2,jf002:jf002,int3:int3,jf003:jf003,
     		int4:int4,jf004:jf004,int5:int5,jf005:jf005,int6:int6,jf006:jf006,nert:nert,isan:isan,abb:abb,mrr:mrr,rmm:rmm,
     		stta:stta,lplp:lplp}));
 	
@@ -2346,7 +2298,8 @@ app.get('/dacudao',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  		//dacudao south
-	  		const dacS = body.RWS[0].RW[24].DE;
+	  		const dacS = body.RWS[0].RW[25].DE;
+
 	  		const jf1 = body.RWS[0].RW[2].FIS[0].FI[3].CF[0].JF;	
 			const jf2 = body.RWS[0].RW[52].FIS[0].FI[1].CF[0].JF;
 	  		var d = 2
@@ -2396,22 +2349,21 @@ app.get('/dacudao',function(_req, _res){
 	  		//dacudao north
 	  		const dacN = body.RWS[0].RW[25].DE;
 	  		const jf01 = body.RWS[0].RW[3].FIS[0].FI[2].CF[0].JF;
-	  		const jf02 = body.RWS[0].RW[53].FIS[0].FI[5].CF[0].JF;
-	  		var daa = jf01 + jf02;
-	  		var dndn = daa/d;
+	  		//const jf02 = body.RWS[0].RW[53].FIS[0].FI[5].CF[0].JF;
+	  		
 			//dacudao north intersections
 	  		const intc1 = body.RWS[0].RW[25].FIS[0].FI[0].TMC.DE;
 	  		const jfc1 = body.RWS[0].RW[25].FIS[0].FI[0].CF[0].JF;	
 	  		const intc2 = body.RWS[0].RW[25].FIS[0].FI[1].TMC.DE;
 	  		const jfc2 = body.RWS[0].RW[25].FIS[0].FI[1].CF[0].JF;
 	  		let dnorth= "";
-		  	if(dndn == 0 || dndn < 4){
+		  	if(jf01 == 0 || jf01 < 4){
 		  	dnorth = "For North bound lane is Free flow of traffic.";
-		  	}else if(dndn == 4 || dndn < 8){
+		  	}else if(jf01 == 4 || jf01 < 8){
 		  	dnorth = "For North bound lane is Sluggish flow of traffic.";
-		  	}else if(dndn == 8 || dndn < 10){
+		  	}else if(jf01 == 8 || jf01 < 10){
 		  	dnorth = "For North bound lane is Slow flow of traffic.";
-		  	}else if(dndn == 10){
+		  	}else if(jf01 == 10){
 		  	dnorth = "For North bound lane is Traffic stopped or Road closed."
 		  	}else{
 		  		dnorth = "North compute"
@@ -2444,7 +2396,7 @@ app.get('/dacudao',function(_req, _res){
 
 	  	_res.setHeader('Content-Type', 'application/json');
     	_res.send(JSON.stringify({dacS:dacS,dada:dada,jp:jp,jf001:jf001,la:la,jf002:jf002,    dsouth:dsouth,jjjp:jjjp,lala:lala,      
-    	 dacN:dacN,dndn:dndn,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,       dnorth:dnorth,lp:lp,jeo:jeo}));
+    	 dacN:dacN,jf01:jf01,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,       dnorth:dnorth,lp:lp,jeo:jeo}));
 	
 	});
 
@@ -2455,7 +2407,7 @@ app.get('/pichonst',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	//pichon  south 
-	  	const south = body.RWS[0].RW[27].DE;
+	  	const psouth = body.RWS[0].RW[27].DE;
 	  	const jf1 = body.RWS[0].RW[0].FIS[0].FI[1].CF[0].JF;
 	    const jf2 = body.RWS[0].RW[1].FIS[0].FI[3].CF[0].JF;
 	    const jf3 = body.RWS[0].RW[18].FIS[0].FI[1].CF[0].JF;
@@ -2467,7 +2419,7 @@ app.get('/pichonst',function(_req, _res){
 		//pichon  south  intersections
 		const intc1 = body.RWS[0].RW[27].FIS[0].FI[0].TMC.DE;
 	  	const jfc1 = body.RWS[0].RW[27].FIS[0].FI[0].CF[0].JF;
-		const intc3 = body.RWS[0].RW[27].FIS[0].FI[2].TMC.DE;
+	//	const intc3 = body.RWS[0].RW[27].FIS[0].FI[2].TMC.DE;
 	  	const jfc3 = body.RWS[0].RW[27].FIS[0].FI[2].CF[0].JF;
 		const intc4 = body.RWS[0].RW[27].FIS[0].FI[3].TMC.DE;
 	  	const jfc4 = body.RWS[0].RW[27].FIS[0].FI[3].CF[0].JF;
@@ -2538,7 +2490,7 @@ app.get('/pichonst',function(_req, _res){
 	  		
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({south:south,ppi:ppi,intc1:intc1,jfc1:jfc1,intc3:intc3,jfc3:jfc3,intc4:intc4,jfc4:jfc4,
+    	_res.send(JSON.stringify({psouth:psouth,ppi:ppi,intc1:intc1,jfc1:jfc1,jfc3:jfc3,intc4:intc4,jfc4:jfc4,
     	intc5:intc5,jfc5:jfc5,southh:southh,ff:ff,ee:ee,cc:cc,gg:gg}));
 	
 	});
@@ -2555,11 +2507,11 @@ app.get('/sanpedro',function(_req, _res){
 	   	const jf2 = body.RWS[0].RW[1].FIS[0].FI[2].CF[0].JF;
 	   	const jf3 = body.RWS[0].RW[18].FIS[0].FI[0].CF[0].JF;
 		const jf4 = body.RWS[0].RW[19].FIS[0].FI[4].CF[0].JF;
-		const jf5 = body.RWS[0].RW[21].FIS[0].FI[5].CF[0].JF;
+		//const jf5 = body.RWS[0].RW[21].FIS[0].FI[5].CF[0].JF;
 	  	const jf6 = body.RWS[0].RW[22].FIS[0].FI[0].CF[0].JF;
 	  	const jf7 = body.RWS[0].RW[38].FIS[0].FI[1].CF[0].JF;
-	  	var san = 7
-	  	var sd = jf1 + jf2 + jf3 + jf4 + jf5 + jf6 + jf7;
+	  	var san = 6
+	  	var sd = jf1 + jf2 + jf3 + jf4  + jf6 + jf7;
 	  	var san = sd/san;	
 	  	//sanpedro north intersections
 	  	const intc1 = body.RWS[0].RW[28].FIS[0].FI[0].TMC.DE;
@@ -2740,11 +2692,9 @@ app.get('/sanpedro',function(_req, _res){
 	  if (err) { return console.log(err); }  
 	  	//bonifacio south
 	  	const bsouth = body.RWS[0].RW[31].DE;
-	  	const jf1 = body.RWS[0].RW[21].FIS[0].FI[4].CF[0].JF;
+	  //	const jf1 = body.RWS[0].RW[21].FIS[0].FI[4].CF[0].JF;
 	  	const jf2 = body.RWS[0].RW[39].FIS[0].FI[2].CF[0].JF;
-	  	var a = 2
-	  	var aa = jf1 + jf2;
-	  	var bs = aa/a;
+	  
 	  	//bonifacio south intersections
 	  	const intc1 = body.RWS[0].RW[31].FIS[0].FI[0].TMC.DE;
 	  	const jfc1 = body.RWS[0].RW[31].FIS[0].FI[0].CF[0].JF;
@@ -2754,13 +2704,13 @@ app.get('/sanpedro',function(_req, _res){
 	  	const jfc3 = body.RWS[0].RW[31].FIS[0].FI[2].CF[0].JF;
 	  	
 	  	let bbsouth= "";
-		if(jf1 == 0 || jf1 < 4){
+		if(jf2 == 0 || jf2 < 4){
 		bbsouth = "For South bound lane is Free flow of traffic.";
-		}else if(jf1 == 4 || jf1 < 8){
+		}else if(jf2 == 4 || jf2 < 8){
 		bbsouth = "For South bound lane is Sluggish flow of traffic.";
-		}else if(jf1 == 8 || jf1 < 10){
+		}else if(jf2 == 8 || jf2 < 10){
 		bbsouth = "For South bound lane is Slow flow of traffic.";
-		}else if(jf1 == 10){
+		}else if(jf2 == 10){
 		bbsouth = "For South bound lane is Traffic stopped or Road closed."
 		}else{
 		bbsouth = "North compute"
@@ -2806,6 +2756,7 @@ app.get('/sanpedro',function(_req, _res){
 		 const bnorth = body.RWS[0].RW[31].DE;
 	  	 const jfcc1 = body.RWS[0].RW[22].FIS[0].FI[1].CF[0].JF;
 	  	 const jfcc2 = body.RWS[0].RW[38].FIS[0].FI[2].CF[0].JF;
+	  	 var a = 2
 	  	 var bn = jfcc1 + jfcc2;
 	  	 var bnn = bn/a;
 	  	 //bonifacio north intersections
@@ -2866,7 +2817,7 @@ app.get('/sanpedro',function(_req, _res){
 		}
 	  	  		
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({bsouth:bsouth,bs:bs,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,intc3:intc3,jfc3:jfc3, 
+    	_res.send(JSON.stringify({bsouth:bsouth,jfc2:jfc2,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,intc3:intc3,jfc3:jfc3, 
     	       bbsouth:bbsouth,cbb:cbb,cmm:cmm,mll:mll,    bnorth:bnorth,bnn:bnn,intcc1:intcc1,jfccc1:jfccc1,intcc2:intcc2,jfccc2:jfccc2,
     	       intcc3:intcc3,jfccc3:jfccc3,   bbnorth:bbnorth,mml:mml,mmcc:mmcc,ccb:ccb  }));
 	
@@ -2878,7 +2829,7 @@ app.get('/sanpedro',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	//mroxas south
-	  	const msouth = body.RWS[0].RW[35].DE;
+	  	const msouth1 = body.RWS[0].RW[35].DE;
 		const jf1 = body.RWS[0].RW[21].FIS[0].FI[3].CF[0].JF;
 		const jf2 = body.RWS[0].RW[39].FIS[0].FI[1].CF[0].JF;
 		const jf3 = body.RWS[0].RW[41].FIS[0].FI[2].CF[0].JF;
@@ -3005,7 +2956,7 @@ app.get('/sanpedro',function(_req, _res){
 		rmag = "North compute"
 		}   	   		
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({msouth:msouth,mm:mm,rrm:rrm,jfc1:jfc1,cmrr:cmrr,jfc2:jfc2,mel:mel,jfc3:jfc3,mmsouth:mmsouth,
+    	_res.send(JSON.stringify({msouth1:msouth1,mm:mm,rrm:rrm,jfc1:jfc1,cmrr:cmrr,jfc2:jfc2,mel:mel,jfc3:jfc3,mmsouth:mmsouth,
     	rmg:rmg,cmr:cmr,mlq:mlq,mnorth:mnorth,mmn:mmn,intc1:intc1,jfcc1:jfcc1,intc2:intc2,jfcc2:jfcc2,intc3:intc3,jfcc3:jfcc3,     
     	mmnorth:mmnorth,llm:llm,mmcs:mmcs,rmag:rmag    }));
 	
@@ -3017,8 +2968,8 @@ app.get('/sanpedro',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	//cmrecto north 
-	  	const north = body.RWS[0].RW[38].DE;
-	  	const jf1 = body.RWS[0].RW[27].FIS[0].FI[3].CF[0].JF;
+	  	const cmnorth = body.RWS[0].RW[38].DE;
+	 // 	const jf1 = body.RWS[0].RW[27].FIS[0].FI[3].CF[0].JF;
 	  	const jf2 = body.RWS[0].RW[28].FIS[0].FI[1].CF[0].JF;
 	  	const jf3 = body.RWS[0].RW[31].FIS[0].FI[1].CF[0].JF;
 	    const jf4 = body.RWS[0].RW[33].FIS[0].FI[1].CF[0].JF;
@@ -3026,8 +2977,8 @@ app.get('/sanpedro',function(_req, _res){
 	  	const jf6 = body.RWS[0].RW[34].FIS[0].FI[1].CF[0].JF;
 	  	const jf7 = body.RWS[0].RW[41].FIS[0].FI[1].CF[0].JF;
 	 	const jf8 = body.RWS[0].RW[42].FIS[0].FI[1].CF[0].JF;
-	 	var r = 8
-	 	var re = jf1 + jf2 + jf3 + jf4 + jf5 + jf6 + jf7 + jf8;
+	 	var r = 7
+	 	var re =  jf2 + jf3 + jf4 + jf5 + jf6 + jf7 + jf8;
 	 	var ree = re/r;
 	 	//cmrecto north intersections
 	 	const intc1 = body.RWS[0].RW[38].FIS[0].FI[0].TMC.DE;
@@ -3115,7 +3066,7 @@ app.get('/sanpedro',function(_req, _res){
 		}      	
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({north:north,ree:ree,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,intc3:intc3,jfc3:jfc3,intc4:intc4,
+    	_res.send(JSON.stringify({cmnorth:cmnorth,ree:ree,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,intc3:intc3,jfc3:jfc3,intc4:intc4,
     	jfc4:jfc4,intc5:intc5,jfc5:jfc5,         nnorth:nnorth,ppi:ppi,ssn:ssn,aab:aab,mrmr:mrmr,mra:mra }));
 	
 	});
@@ -3241,19 +3192,19 @@ app.get('/sanpedro',function(_req, _res){
 	  if (err) { return console.log(err); }  
 	  	//rmag south
 	  	const rsouth = body.RWS[0].RW[41].DE;
-	  	const jf1 = body.RWS[0].RW[21].FIS[0].FI[2].CF[0].JF;
+	  //	const jf1 = body.RWS[0].RW[21].FIS[0].FI[2].CF[0].JF;
 	  	const jf2 = body.RWS[0].RW[35].FIS[0].FI[0].CF[0].JF;
 	  	const jf3 = body.RWS[0].RW[36].FIS[0].FI[1].CF[0].JF;
-		var so = 3
-		var sr = jf1 + jf2 + jf3;
+		var so = 2
+		var sr = jf2 + jf3;
 		var srr = sr/so;
 		//rmag south intersections
 		const intc1 = body.RWS[0].RW[41].FIS[0].FI[0].TMC.DE;
 	  	const jfc1 = body.RWS[0].RW[41].FIS[0].FI[0].CF[0].JF;
-	  	const intc2 = body.RWS[0].RW[41].FIS[0].FI[1].TMC.DE;
-	  	const jfc2 = body.RWS[0].RW[41].FIS[0].FI[1].CF[0].JF;
-	  	const intc3 = body.RWS[0].RW[41].FIS[0].FI[2].TMC.DE;
-	  	const jfc3 = body.RWS[0].RW[41].FIS[0].FI[2].CF[0].JF;
+	  	//const intc2 = body.RWS[0].RW[41].FIS[0].FI[1].TMC.DE;
+	  //	const jfc2 = body.RWS[0].RW[41].FIS[0].FI[1].CF[0].JF;
+	  //	const intc3 = body.RWS[0].RW[41].FIS[0].FI[2].TMC.DE;
+	//  	const jfc3 = body.RWS[0].RW[41].FIS[0].FI[2].CF[0].JF;
 
 		let rssouth= "";
 		if(srr == 0 || srr < 4){
@@ -3279,30 +3230,7 @@ app.get('/sanpedro',function(_req, _res){
 		}else{
 		mell = "North compute"
 		}
-		let cem= "";
-		if(jfc2 == 0 || jfc2 < 4){
-		cem = "C. M. Recto/J. P. Laurel Ave South bound lane is Free flow of traffic.";
-		}else if(jfc2 == 4 || jfc2 < 8){
-		cem = "C. M. Recto/J. P. Laurel Ave South bound lane is Sluggish flow of traffic.";
-		}else if(jfc2 == 8 || jfc2 < 10){
-		cem = "C. M. Recto/J. P. Laurel Ave South bound lane is Slow flow of traffic.";
-		}else if(jfc2 == 10){
-		cem = "C. M. Recto/J. P. Laurel Ave South bound lane is Traffic stopped or Road closed."
-		}else{
-		cem = "North compute"
-		}
-		let cbe= "";
-		if(jfc3 == 0 || jfc3 < 4){
-		cbe = "C. Bangoy/M. Roxas South bound lane is Free flow of traffic.";
-		}else if(jfc3 == 4 || jfc3 < 8){
-		cbe = "C. Bangoy/M. Roxas South bound lane is Sluggish flow of traffic.";
-		}else if(jfc3 == 8 || jfc3 < 10){
-		cbe = "C. Bangoy/M. Roxas South bound lane is Slow flow of traffic.";
-		}else if(jfc3 == 10){
-		cbe = "C. Bangoy/M. Roxas South bound lane is Traffic stopped or Road closed."
-		}else{
-		cbe = "North compute"
-		}       
+	
      	//rmag north
      	const rnorth = body.RWS[0].RW[41].DE;
 	  	const jf01 = body.RWS[0].RW[22].FIS[0].FI[3].CF[0].JF;
@@ -3371,8 +3299,8 @@ app.get('/sanpedro',function(_req, _res){
 
 	  
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({rsouth:rsouth,srr:srr,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,intc3:intc3,jfc3:jfc3,     
-    		    rssouth:rssouth,mell:mell,cem:cem,cbe:cbe,      
+    	_res.send(JSON.stringify({rsouth:rsouth,srr:srr,intc1:intc1,jfc1:jfc1,    
+    		    rssouth:rssouth,mell:mell,     
     		rnorth:rnorth,noo:noo,intcc1:intcc1,jfcc1:jfcc1,intcc2:intcc2,jfcc2:jfcc2,intcc3:intcc3,jfcc3:jfcc3,      
     		rnnorth:rnnorth,cba:cba,cemr:cemr,mel1:mel1     }));
 	
@@ -3781,7 +3709,7 @@ app.get('/sanpedro',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	 //rcastillo south
-	  	const rsouth = body.RWS[0].RW[49].DE; 
+	  	const rsouth1 = body.RWS[0].RW[49].DE; 
 	  	const jf1 = body.RWS[0].RW[2].FIS[0].FI[0].CF[0].JF;
 		const jf2 = body.RWS[0].RW[20].FIS[0].FI[1].CF[0].JF;
 	  	const jf3 = body.RWS[0].RW[21].FIS[0].FI[0].CF[0].JF;
@@ -3883,7 +3811,7 @@ app.get('/sanpedro',function(_req, _res){
 		}
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({rsouth:rsouth,srr:srr,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,rrsouth:rrsouth,jep:jep,agg:agg, 
+    	_res.send(JSON.stringify({rsouth1:rsouth1,srr:srr,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,rrsouth:rrsouth,jep:jep,agg:agg, 
     	 rnorth:rnorth,nrr:nrr,intcc1:intcc1,jfc1:jfc1,intcc2:intcc2,jfc2:jfc2,rrnorth:rrnorth,aggg:aggg,jepp:jepp      }));
 	
 	});
@@ -4293,8 +4221,10 @@ app.get('/diversion',function(_req, _res){
 	  	}else{
 	  		jppe = "Cannot compute"
 	  	}
-	  	// quenones north
-	  	const qqnorth = body.RWS[0].RW[55].DE;
+	  // quenones north
+	  //	const streetc = body.RWS[0].RW[55].DE;
+	 // 	const qqnorth = body.RWS[0].RW[55].DE;
+	 	const qqnorth = body.RWS[0].RW[56].DE;
 	  	const jf2 = body.RWS[0].RW[53].FIS[0].FI[5].CF[0].JF;
 	  	//quenones north intersections
 	  	const intcc1 = body.RWS[0].RW[55].FIS[0].FI[0].TMC.DE;
@@ -4352,7 +4282,7 @@ app.get('/rodri',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	 //rodri south
-	  	 const jsouth = body.RWS[0].RW[57].DE;
+	  	const jsouth = body.RWS[0].RW[57].DE;
 	  	const jf02 = body.RWS[0].RW[52].FIS[0].FI[1].CF[0].JF;
 		let jssouth = "";
 	  	if(jf02 == 0 || jf02 < 4){
@@ -4397,8 +4327,11 @@ app.get('/rodri',function(_req, _res){
 	  	}  	
 
 	  	//rodri north
-	  	 const jnorth = body.RWS[0].RW[57].DE;
-  		const jf005 = body.RWS[0].RW[53].FIS[0].FI[5].CF[0].JF;
+	  	const jnorth = body.RWS[0].RW[57].DE;
+	  	const intc05 = body.RWS[0].RW[52].FIS[0].FI[1].CF[0].JF;
+  	//	const intc05 =  body.RWS[0].RW[53].FIS[0].FI[5].CF[0].JF;
+
+
   		//rodri north intersections
   		const intcc1 = body.RWS[0].RW[58].FIS[0].FI[0].TMC.DE;
 	  	const jfcc1 = body.RWS[0].RW[58].FIS[0].FI[0].CF[0].JF;
@@ -4406,13 +4339,13 @@ app.get('/rodri',function(_req, _res){
 	  	const jfcc2 = body.RWS[0].RW[58].FIS[0].FI[1].CF[0].JF;
 
   		let jnnorth = "";
-	  	if(jf005 == 0 || jf005 < 4){
+	  	if(intc05 == 0 || intc05 < 4){
 	  		jnnorth = "For North bound lane is Free flow of traffic";
-	  	}else if(jf005 == 4 || jf005 < 8){
+	  	}else if(intc05 == 4 || intc05 < 8){
 	  		jnnorth = "For North bound lane is Sluggish flow of traffic";
-	  	}else if(jf005 == 8 || jf005 < 10){
+	  	}else if(intc05 == 8 || intc05 < 10){
 	  		jnnorth = "For North bound lane is Slow flow of traffic";
-	  	}else if(jf005 == 10){
+	  	}else if(intc05 == 10){
 	  		jnnorth = "For North bound lane is Traffic stopped or Road closed"
 	  	}else{
 	  		jnnorth = "Cannot compute"
@@ -4445,7 +4378,7 @@ app.get('/rodri',function(_req, _res){
 
 	  	_res.setHeader('Content-Type', 'application/json');
     	_res.send(JSON.stringify({jsouth:jsouth,jf02:jf02,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,jssouth:jssouth,divver:divver,nnar:nnar,
-    		jnorth:jnorth,jf005:jf005,intcc1:intcc1,jfcc1:jfcc1,intcc2:intcc2,jfcc2:jfcc2,jnnorth:jnnorth,nnarr:nnarr,divverr:divverr}));
+    		jnorth:jnorth,intc05:intc05,intcc1:intcc1,jfcc1:jfcc1,intcc2:intcc2,jfcc2:jfcc2,jnnorth:jnnorth,nnarr:nnarr,divverr:divverr}));
 	
 	});
 
@@ -4456,7 +4389,7 @@ app.get('/maa',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	//maa south intersections
-	  	const msouth = body.RWS[0].RW[59].DE;
+	  	const msouth2 = body.RWS[0].RW[59].DE;
 	  	const jf1 = body.RWS[0].RW[4].FIS[0].FI[3].CF[0].JF;
 		const jf2 = body.RWS[0].RW[57].FIS[0].FI[1].CF[0].JF;
 	  	var m = 2
@@ -4557,7 +4490,7 @@ app.get('/maa',function(_req, _res){
 
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({msouth:msouth,ssm:ssm,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,mmsouth:mmsouth,nare:nare,mec:mec,
+    	_res.send(JSON.stringify({msouth2:msouth2,ssm:ssm,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,mmsouth:mmsouth,nare:nare,mec:mec,
     	  mnorth:mnorth,sssm:sssm,intcc1:intcc1,jfcc1:jfcc1,intcc2:intcc2,mmnorth:mmnorth,mecc:mecc,narer:narer }));
 	
 	});
@@ -4569,7 +4502,7 @@ app.get('/shrine',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	//shrine south
-	  	const ssouth = body.RWS[0].RW[61].DE;
+	  	const ssouth1 = body.RWS[0].RW[61].DE;
 	  	const jf1 = body.RWS[0].RW[4].FIS[0].FI[5].CF[0].JF;
 		const jf2 = body.RWS[0].RW[52].FIS[0].FI[4].CF[0].JF;
 	  	var s = 2;
@@ -4621,9 +4554,10 @@ app.get('/shrine',function(_req, _res){
 	  	//shrine north
 	  	const ssnorth = body.RWS[0].RW[61].DE;
 	  	const jf3 = body.RWS[0].RW[5].FIS[0].FI[8].CF[0].JF;
-	  	const jf4 = body.RWS[0].RW[53].FIS[0].FI[2].CF[0].JF;
-	  	var nn = jf1 + jf2;
-	  	var nnn = nn/s;
+	  //	const jf4 = body.RWS[0].RW[53].FIS[0].FI[2].CF[0].JF;
+	  	var on = 1
+	  	var nn = jf3 ;
+	  	var nnn = nn/on;
 	  	//shrine north intersections
 	  	const intcc1 = body.RWS[0].RW[62].FIS[0].FI[0].TMC.DE;
 	  	const jfcc1 = body.RWS[0].RW[62].FIS[0].FI[0].CF[0].JF;
@@ -4666,7 +4600,7 @@ app.get('/shrine',function(_req, _res){
 	  		dddev = "Cannot compute"
 	  	}
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({ssouth:ssouth,sss:sss,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,sssouth:sssouth,ddev:ddev,mmec:mmec,
+    	_res.send(JSON.stringify({ssouth1:ssouth1,sss:sss,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,sssouth:sssouth,ddev:ddev,mmec:mmec,
     	 ssnorth:ssnorth,nnn:nnn,intcc1:intcc1,jfcc1:jfcc1,intcc2:intcc2,jfcc2:jfcc2,sssnorth:sssnorth,mmmec:mmmec,dddev:dddev}));
 	
 	});
@@ -4691,8 +4625,8 @@ app.get('/shrine',function(_req, _res){
 	  	const jfc1 = body.RWS[0].RW[63].FIS[0].FI[0].CF[0].JF;
 	  	const intc2 = body.RWS[0].RW[63].FIS[0].FI[1].TMC.DE;
 	  	const jfc2 = body.RWS[0].RW[63].FIS[0].FI[1].CF[0].JF;
-	  	const intc3 = body.RWS[0].RW[63].FIS[0].FI[2].TMC.DE;
-	  	const jfc3 = body.RWS[0].RW[63].FIS[0].FI[2].CF[0].JF;
+	  	//const intc3 = body.RWS[0].RW[63].FIS[0].FI[2].TMC.DE;
+	  //	const jfc3 = body.RWS[0].RW[63].FIS[0].FI[2].CF[0].JF;
 
 	  	let  aasouth= "";
 	  	if(aaa == 0 || aaa < 4){
@@ -4745,7 +4679,7 @@ app.get('/shrine',function(_req, _res){
 	  	//angliongto north
 	  	const anorth = body.RWS[0].RW[66].DE;
 	  	const jf6 = body.RWS[0].RW[54].FIS[0].FI[0].CF[0].JF;
-	  	const jf7 = body.RWS[0].RW[53].FIS[0].FI[6].CF[0].JF;
+	  //	const jf7 = body.RWS[0].RW[53].FIS[0].FI[6].CF[0].JF;
 	  	const jf8 = body.RWS[0].RW[3].FIS[0].FI[4].CF[0].JF;
 	  	const jf9 = body.RWS[0].RW[68].FIS[0].FI[1].CF[0].JF;
 	   const jf10 = body.RWS[0].RW[70].FIS[0].FI[0].CF[0].JF;
@@ -4756,9 +4690,9 @@ app.get('/shrine',function(_req, _res){
 	  	const jfcc2 = body.RWS[0].RW[66].FIS[0].FI[1].CF[0].JF;
 	  	const intcc3 = body.RWS[0].RW[66].FIS[0].FI[2].TMC.DE;
 	  	const jfcc3 = body.RWS[0].RW[66].FIS[0].FI[2].CF[0].JF;
-
-	  	var naa = jf6 + jf7 + jf8 + jf9 + jf10;
-	  	var naaa = naa/a; 	
+	  	var aaaaa = 4
+	  	var naa = jf6 + jf8 + jf9 + jf10;
+	  	var naaa = naa/aaaaa; 	
 	  	let  aanorth= "";
 	  	if(naaa == 0 || naaa < 4){
 	  		aanorth = "For North bound lane is Free flow of traffic";
@@ -4809,7 +4743,7 @@ app.get('/shrine',function(_req, _res){
 	  	} 	
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({asouth:asouth,aaa:aaa,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,intc3:intc3,jfc3:jfc3,
+    	_res.send(JSON.stringify({asouth:asouth,aaa:aaa,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,
     		aasouth:aasouth,ssai:ssai,dede:dede,jeje:jeje,
     	  anorth:anorth,naaa:naaa,intcc1:intcc1,jfcc1:jfcc1,intcc2:intcc2,jfcc2:jfcc2,intcc3:intcc3,jfcc3:jfcc3,       
     	  aanorth:aanorth,jejeje:jejeje,dedede:dedede,ssaia:ssaia  }));
@@ -4822,7 +4756,7 @@ app.get('/shrine',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	//buhangin south
-	  	const bsouth = body.RWS[0].RW[64].DE;
+	  	const bsouth1 = body.RWS[0].RW[64].DE;
 	  	const jf1 = body.RWS[0].RW[2].FIS[0].FI[3].CF[0].JF;
 		const jf2 = body.RWS[0].RW[52].FIS[0].FI[1].CF[0].JF;
 		var b = 2
@@ -4860,9 +4794,10 @@ app.get('/shrine',function(_req, _res){
 	  	//buhangin north
 	  	const bnorth = body.RWS[0].RW[64].DE;
 	  	const jf3 = body.RWS[0].RW[3].FIS[0].FI[2].CF[0].JF;
-	  	const jf4 = body.RWS[0].RW[53].FIS[0].FI[5].CF[0].JF;
-	  	var nb = jf1 + jf2;
-		var nnb = nb/b;
+	  	//const jf4 = body.RWS[0].RW[53].FIS[0].FI[5].CF[0].JF;
+	  	var neb = 1
+	  	var nb = jf3 ;
+		var nnb = nb/neb;
 		//buhangin north intersections
 		const intcc1 = body.RWS[0].RW[67].FIS[0].FI[0].TMC.DE;
 	  	const jfcc1 = body.RWS[0].RW[67].FIS[0].FI[0].CF[0].JF;
@@ -4894,7 +4829,7 @@ app.get('/shrine',function(_req, _res){
 
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({bsouth:bsouth,ssb:ssb,intc1:intc1,jfc1:jfc1,bbsouth:bbsouth,ccp:ccp,
+    	_res.send(JSON.stringify({bsouth1:bsouth1,ssb:ssb,intc1:intc1,jfc1:jfc1,bbsouth:bbsouth,ccp:ccp,
     	  bnorth:bnorth,nnb:nnb,intcc1:intcc1,jfcc1:jfcc1,bbnorth:bbnorth,ddevs:ddevs}));
 	
 	});
@@ -4987,7 +4922,7 @@ app.get('/bukidnon',function(_req, _res){
 	request('https://traffic.api.here.com/traffic/6.1/flow.json?bbox=7.2598%2C125.0860%3B6.7670%2C125.6674&app_id=fQbW8CGYiU3l5mLqWgBE&app_code=SYZXwjFBHSYi_1t1GNuHow', { json: true }, (err, res, body) => {
 	  if (err) { return console.log(err); }  
 	  	//bukidnon south
-	  	const bsouth = body.RWS[0].RW[73].DE;
+	  	const bsouth2 = body.RWS[0].RW[73].DE;
 		const jf1= body.RWS[0].RW[4].FIS[0].FI[10].CF[0].JF;
 		//bukidnon south intersection
 		const intc1 = body.RWS[0].RW[73].FIS[0].FI[0].TMC.DE;
@@ -5078,7 +5013,7 @@ app.get('/bukidnon',function(_req, _res){
 	  	} 
 
 	  	_res.setHeader('Content-Type', 'application/json');
-    	_res.send(JSON.stringify({bsouth:bsouth,jf1:jf1,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,bbsouth:bbsouth,qua:qua,ma:ma,
+    	_res.send(JSON.stringify({bsouth2:bsouth2,jf1:jf1,intc1:intc1,jfc1:jfc1,intc2:intc2,jfc2:jfc2,bbsouth:bbsouth,qua:qua,ma:ma,
     	bnorth:bnorth,jf2:jf2,intcc1:intcc1,jfcc1:jfcc1,intcc2:intcc2,jfcc2:jfcc2,bbnorth:bbnorth,mama:mama,qqua:qqua       }));  
 	
 	});
@@ -5566,7 +5501,7 @@ let token = "EAAe72eh0wNEBAHKDeLrI7nIZAfCaZBvpKZBarqamZCZAmaDGLBg75EZBXRfo5pIRyg
 // Facebook 
 
 app.get('/webhook/', function(req, res) {
-	if (req.query['hub.verify_token'] === "Henlo") {
+	if (req.query['hub.verify_token'] === "Hi") {
 		res.send(req.query['hub.challenge'])
 	}
 	res.send("Wrong token")
@@ -5950,7 +5885,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					 
 					   
 				  });
 					break;
@@ -5983,7 +5918,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6016,7 +5951,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  ///  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6050,7 +5985,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6083,7 +6018,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6116,7 +6051,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					 //   chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6142,7 +6077,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6168,7 +6103,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					 //   chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6193,7 +6128,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					 //   chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6218,7 +6153,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6251,7 +6186,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					 //   chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6283,7 +6218,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6318,7 +6253,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+				//	    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6352,7 +6287,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6386,7 +6321,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6419,7 +6354,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					 //   chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6442,7 +6377,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6465,7 +6400,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6489,7 +6424,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					    //chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6514,7 +6449,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6542,7 +6477,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+				//	    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6567,7 +6502,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6591,7 +6526,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					   // chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6615,7 +6550,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6640,7 +6575,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6665,7 +6600,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6690,7 +6625,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					 //   chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6715,7 +6650,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6747,7 +6682,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6774,7 +6709,7 @@ app.post('/webhook/', function(req, res) {
 					    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6792,9 +6727,9 @@ app.post('/webhook/', function(req, res) {
 					      	   
 					  })
 					  .catch(function (error) {	    
-					    chatbotResponse1 = "not ok";
-					    sendText(sender, chatbotResponse1)
 					    chatbotResponse = "not ok";
+					    sendText(sender, chatbotResponse)
+					   // chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6820,7 +6755,7 @@ app.post('/webhook/', function(req, res) {
 					  .catch(function (error) {	    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6845,7 +6780,7 @@ app.post('/webhook/', function(req, res) {
 					  .catch(function (error) {	    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					   // chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6870,7 +6805,7 @@ app.post('/webhook/', function(req, res) {
 					  .catch(function (error) {	    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					   // chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6895,7 +6830,7 @@ app.post('/webhook/', function(req, res) {
 					  .catch(function (error) {	    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6916,7 +6851,7 @@ app.post('/webhook/', function(req, res) {
 					  .catch(function (error) {	    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6937,7 +6872,7 @@ app.post('/webhook/', function(req, res) {
 					  .catch(function (error) {	    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6960,7 +6895,7 @@ app.post('/webhook/', function(req, res) {
 					  .catch(function (error) {	    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					  //  chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -6983,7 +6918,7 @@ app.post('/webhook/', function(req, res) {
 					  .catch(function (error) {	    
 					    chatbotResponse1 = "not ok";
 					    sendText(sender, chatbotResponse1)
-					    chatbotResponse = "not ok";
+					//    chatbotResponse = "not ok";
 					   
 				  });
 					break;
@@ -7496,7 +7431,7 @@ app.post('/webhook/', function(req, res) {
 				}else{
 
 					
-				if(text == 'E. Quirino Ave')
+				if(text == "E. Quirino Ave")
 			{
 			
 				let chatbotResponse = "";
@@ -8531,7 +8466,7 @@ app.post('/webhook/', function(req, res) {
 				break;
 
 			}
-			if(text == 'Quezon Blvd south intersections')
+			if(text == 'Quezon Blvd')
 			{					
 					//sendText(sender, "I guess you mean Quimpo Blvd south intersections. The traffic congestion in the intersections.")					
 					let chatbotResponse = "";	
@@ -8800,7 +8735,7 @@ app.post('/webhook/', function(req, res) {
 
 				break;
 
-			}if(text == 'Sanpedro St')
+			}if(text == 'San Pedro St')
 			{
 			
 				let chatbotResponse = "";
@@ -9963,7 +9898,7 @@ app.post('/webhook/', function(req, res) {
 				  });
 				break;
 
-			}if(text == 'Shrine Hills Rd//S Cuyugan')
+			}if(text == 'Shrine Hills Rd/S Cuyugan')
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
@@ -9985,7 +9920,7 @@ app.post('/webhook/', function(req, res) {
 				  });
 				break;
 
-			}if(text == 'Shrine Hills Rd//S Cuyugan north intersections')
+			}if(text == 'Shrine Hills Rd/S Cuyugan north intersections')
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
@@ -10007,7 +9942,7 @@ app.post('/webhook/', function(req, res) {
 				  });
 				break;
 
-			}if(text == 'Shrine Hills Rd//S Cuyugan south intersections')
+			}if(text == 'Shrine Hills Rd/S Cuyugan south intersections')
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
@@ -10176,7 +10111,7 @@ app.post('/webhook/', function(req, res) {
 				    sendText(sender, chatbotResponse)
 				    chatbotResponse1 = "not ok";
 				  sendText(sender, chatbotResponse1)
-
+ 
 				  });
 				break;
 
@@ -10285,7 +10220,7 @@ app.post('/webhook/', function(req, res) {
 			{
 				let chatbotResponse = "";
 				let chatbotResponse1 = "";
-				sendText(sender, "I guess you mean  " +equirinsouth+". The traffic congestion in this road.")			
+				sendText(sender, "I guess you mean E. Quirino Ave. The traffic congestion in this road.")			
 				//source : https://www.npmjs.com/package/axios
 				axios.get('http://trapiko.herokuapp.com/equirino')
 				  .then(function (response) {
@@ -10487,7 +10422,7 @@ app.post('/webhook/', function(req, res) {
 					
 				let chatbotResponse = "";
 				let chatbotResponse1 = "";	
-				sendText(sender, "I guess you mean Sandawa. The traffic congestion in this road.")		
+				sendText(sender, "I guess you mean Sandawa Rd. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
 				axios.get('http://trapiko.herokuapp.com/sandawa')
 				  .then(function (response) {
@@ -10684,7 +10619,7 @@ app.post('/webhook/', function(req, res) {
 					
 				let chatbotResponse = "";
 				//let chatbotResponse1 = "";	
-				sendText(sender, "I guess you mean Sanpedro St. The traffic congestion in this road.")		
+				sendText(sender, "I guess you mean San Pedro St. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
 				axios.get('http://trapiko.herokuapp.com/sanpedro')
 				  .then(function (response) {
@@ -10801,7 +10736,7 @@ app.post('/webhook/', function(req, res) {
 				//source : https://www.npmjs.com/package/axios
 				axios.get('http://trapiko.herokuapp.com/cmrecto')
 				  .then(function (response) {
-				    //console.log(response);
+				
 				    chatbotResponse = response.data.nnorth;
 				    sendText(sender, chatbotResponse)
 				    
@@ -10811,8 +10746,7 @@ app.post('/webhook/', function(req, res) {
 				  .catch(function (error) {
 				    chatbotResponse = "not ok";
 				    sendText(sender, chatbotResponse)
-				     chatbotResponse1 = "not ok";
-				    sendText(sender, chatbotResponse1)
+				 
 				 
 
 				  });
@@ -10849,7 +10783,7 @@ app.post('/webhook/', function(req, res) {
 
 				}if(text.includes('Mag') || text.includes('mag'))	
 			{
-				sendText(sender, "I guess you mean R. Magsaysay Ave. The traffic congestion in this road.")	
+				sendText(sender, "I guess you mean R. Magsaysay. The traffic congestion in this road.")	
 				let chatbotResponse = "";
 				let chatbotResponse2 = "";
 					
@@ -11109,7 +11043,7 @@ app.post('/webhook/', function(req, res) {
 
 				}if(text.includes('Shr') || text.includes('shr')|| text.includes('cag')|| text.includes('Cagu'))	
 			{
-				sendText(sender, "I guess you mean Shrine Hills Rd//S Cuyugan. The traffic congestion in this road.")	
+				sendText(sender, "I guess you mean Shrine Hills Rd/S Cuyugan. The traffic congestion in this road.")	
 				let chatbotResponse = "";
 				let chatbotResponse2 = "";
 					
@@ -11135,7 +11069,7 @@ app.post('/webhook/', function(req, res) {
 
 				}if(text.includes('Angl') || text.includes('angl'))	
 			{
-				sendText(sender, "I guess you mean Angliongto. The traffic congestion in this road.")	
+				sendText(sender, "I guess you mean  Angliongto. The traffic congestion in this road.")	
 				let chatbotResponse = "";
 				let chatbotResponse2 = "";
 					
@@ -11161,7 +11095,7 @@ app.post('/webhook/', function(req, res) {
 
 				}if(text.includes('Buhan') || text.includes('buha'))	
 			{
-				sendText(sender, "I guess you mean Buhangin-Cabantian Rd. The traffic congestion in this road.")	
+				sendText(sender, "I guess you mean  Buhangin-Cabantian Rd. The traffic congestion in this road.")	
 				let chatbotResponse = "";
 				let chatbotResponse2 = "";
 					
@@ -11178,16 +11112,14 @@ app.post('/webhook/', function(req, res) {
 				  .catch(function (error) {
 				    chatbotResponse = "not ok";
 				    sendText(sender, chatbotResponse)
-				     chatbotResponse1 = "not ok";
-				    sendText(sender, chatbotResponse1)
-				 
+				   
 
 				  });
 				  break;
 
 				}if(text.includes('Cabant') || text.includes('cabant'))	
 			{
-				sendText(sender, "I guess you mean Cabantian Rd. The traffic congestion in this road.")	
+				sendText(sender, "I guess you mean  Cabantian Rd. The traffic congestion in this road.")	
 				let chatbotResponse = "";
 				let chatbotResponse2 = "";
 					
@@ -11204,9 +11136,7 @@ app.post('/webhook/', function(req, res) {
 				  .catch(function (error) {
 				    chatbotResponse = "not ok";
 				    sendText(sender, chatbotResponse)
-				     chatbotResponse1 = "not ok";
-				    sendText(sender, chatbotResponse1)
-				 
+				   
 
 				  });
 				  break;
@@ -11217,10 +11147,10 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse = "";
 				let chatbotResponse2 = "";
 					
-				//source : https://www.npmjs.com/package/axios
+			
 				axios.get('http://trapiko.herokuapp.com/bukidnon')
 				  .then(function (response) {
-				    //console.log(response);
+				
 				    chatbotResponse = response.data.bbsouth;
 				    sendText(sender, chatbotResponse)
 				     chatbotResponse2 = response.data.bbnorth;
@@ -11230,10 +11160,7 @@ app.post('/webhook/', function(req, res) {
 				  .catch(function (error) {
 				    chatbotResponse = "not ok";
 				    sendText(sender, chatbotResponse)
-				     chatbotResponse1 = "not ok";
-				    sendText(sender, chatbotResponse1)
-				 
-
+				     
 				  });
 				  break;
 
