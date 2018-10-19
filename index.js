@@ -5088,7 +5088,7 @@ app.get('/bukidnon',function(_req, _res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/equirino')
+	axios.get('http://trapiko.herokuapp.com/equirino')
 	  .then(function (response) {
 	    console.log(response.data);
 	  
@@ -5102,7 +5102,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/jp')
+	axios.get('http://trapiko.herokuapp.com/jp')
 	  .then(function (response) {
 	    console.log(response.data);
 	   
@@ -5116,7 +5116,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/mcarthur')
+	axios.get('http://trapiko.herokuapp.com/mcarthur')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5130,7 +5130,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/ecowestdr')
+	axios.get('http://trapiko.herokuapp.com/ecowestdr')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5144,7 +5144,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/ecoland')
+	axios.get('http://trapiko.herokuapp.com/ecoland')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5158,7 +5158,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/matina')
+	axios.get('http://trapiko.herokuapp.com/matina')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5172,7 +5172,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/tulipdr')
+	axios.get('http://trapiko.herokuapp.com/tulipdr')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5186,7 +5186,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/sandawa')
+	axios.get('http://trapiko.herokuapp.com/sandawa')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5200,7 +5200,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/quimpoblvd')
+	axios.get('http://trapiko.herokuapp.com/quimpoblvd')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5214,7 +5214,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/quezonblvd')
+	axios.get('http://trapiko.herokuapp.com/quezonblvd')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5228,7 +5228,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/cabaguio')
+	axios.get('http://trapiko.herokuapp.com/cabaguio')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5242,7 +5242,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/mlquezon')
+	axios.get('http://trapiko.herokuapp.com/mlquezon')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5256,7 +5256,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/dacudao')
+	axios.get('http://trapiko.herokuapp.com/dacudao')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5270,7 +5270,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/pichonst')
+	axios.get('http://trapiko.herokuapp.com/pichonst')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5284,7 +5284,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/torres')
+	axios.get('http://trapiko.herokuapp.com/torres')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5298,7 +5298,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/bonifacio')
+	axios.get('http://trapiko.herokuapp.com/bonifacio')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5312,7 +5312,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/mroxas')
+	axios.get('http://trapiko.herokuapp.com/mroxas')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5326,7 +5326,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/cmrecto')
+	axios.get('http://trapiko.herokuapp.com/cmrecto')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5340,7 +5340,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/cbangoy')
+	axios.get('http://trapiko.herokuapp.com/cbangoy')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5354,7 +5354,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/rmagg')
+	axios.get('http://trapiko.herokuapp.com/rmagg')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5368,7 +5368,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/sta')
+	axios.get('http://trapiko.herokuapp.com/sta')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5382,7 +5382,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/lapulapu')
+	axios.get('http://trapiko.herokuapp.com/lapulapu')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5396,7 +5396,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/agadofly')
+	axios.get('http://trapiko.herokuapp.com/agadofly')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5410,7 +5410,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/rcastillo')
+	axios.get('http://trapiko.herokuapp.com/rcastillo')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5424,7 +5424,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/garcia')
+	axios.get('http://trapiko.herokuapp.com/garcia')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5438,7 +5438,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/diversion')
+	axios.get('http://trapiko.herokuapp.com/diversion')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5452,7 +5452,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/quenones')
+	axios.get('http://trapiko.herokuapp.com/quenones')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5466,7 +5466,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/rodri')
+	axios.get('http://trapiko.herokuapp.com/rodri')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5480,7 +5480,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/maa')
+	axios.get('http://trapiko.herokuapp.com/maa')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5494,7 +5494,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/shrine')
+	axios.get('http://trapiko.herokuapp.com/shrine')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5508,7 +5508,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/angg')
+	axios.get('http://trapiko.herokuapp.com/angg')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5522,7 +5522,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/buhangin')
+	axios.get('http://trapiko.herokuapp.com/buhangin')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5536,7 +5536,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/cabantian')
+	axios.get('http://trapiko.herokuapp.com/cabantian')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5550,7 +5550,7 @@ app.get('/geo',function(req, res){
 app.get('/geo',function(req, res){
 	
 
-	axios.get('https://whispering-inlet-28384.herokuapp.com/bukidnon')
+	axios.get('http://trapiko.herokuapp.com/bukidnon')
 	  .then(function (response) {
 	    console.log(response.data);
 	    
@@ -5594,7 +5594,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";		
 			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/equirino')
+					axios.get('http://trapiko.herokuapp.com/equirino')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.arthur;
@@ -5639,7 +5639,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse4 = "";	
 					
 			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/equirino')
+					axios.get('http://trapiko.herokuapp.com/equirino')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.jpl;					
@@ -5675,7 +5675,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					let chatbotResponse4 = "";	
 					let chatbotResponse5 = "";
-					axios.get('https://whispering-inlet-28384.herokuapp.com/jp')
+					axios.get('http://trapiko.herokuapp.com/jp')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.rs;					
@@ -5719,7 +5719,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse4 = "";	
 					let chatbotResponse5 = "";
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/jp')
+					axios.get('http://trapiko.herokuapp.com/jp')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.fee;					
@@ -5773,7 +5773,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse13 = "";
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mcarthur')
+					axios.get('http://trapiko.herokuapp.com/mcarthur')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.quet;					
@@ -5845,7 +5845,7 @@ app.post('/webhook/', function(req, res) {
 					
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mcarthur')
+					axios.get('http://trapiko.herokuapp.com/mcarthur')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.qqq;					
@@ -5906,7 +5906,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/ecowestdr')
+					axios.get('http://trapiko.herokuapp.com/ecowestdr')
 					  .then(function (response) {
 					  	   
 					   
@@ -5935,7 +5935,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/ecowestdr')
+					axios.get('http://trapiko.herokuapp.com/ecowestdr')
 					  .then(function (response) {
 					  	   
 					   
@@ -5965,7 +5965,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse2 = "";	
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/ecoland')
+					axios.get('http://trapiko.herokuapp.com/ecoland')
 					  .then(function (response) {
 					  	   
 					   
@@ -5998,7 +5998,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse2 = "";	
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/ecoland')
+					axios.get('http://trapiko.herokuapp.com/ecoland')
 					  .then(function (response) {
 					  	   
 					   
@@ -6032,7 +6032,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/matina')
+					axios.get('http://trapiko.herokuapp.com/matina')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.mmc;					
@@ -6066,7 +6066,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/matina')
+					axios.get('http://trapiko.herokuapp.com/matina')
 					  .then(function (response) {		  	   
 				     chatbotResponse = response.data.wwe;					
 					    sendText(sender, chatbotResponse)
@@ -6099,7 +6099,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/matina')
+					axios.get('http://trapiko.herokuapp.com/matina')
 					  .then(function (response) {		  	   
 				     chatbotResponse = response.data.wwe;					
 					    sendText(sender, chatbotResponse)
@@ -6129,7 +6129,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/tulipdr')
+					axios.get('http://trapiko.herokuapp.com/tulipdr')
 					  .then(function (response) {		  	   
 				     chatbotResponse = response.data.mec;					
 					    sendText(sender, chatbotResponse)
@@ -6155,7 +6155,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/tulipdr')
+					axios.get('http://trapiko.herokuapp.com/tulipdr')
 					  .then(function (response) {		  	   
 				     chatbotResponse = response.data.eech;					
 					    sendText(sender, chatbotResponse)
@@ -6181,7 +6181,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/sandawa')
+					axios.get('http://trapiko.herokuapp.com/sandawa')
 					  .then(function (response) {		  	   
 				     chatbotResponse = response.data.mecmec;					
 					    sendText(sender, chatbotResponse)
@@ -6206,7 +6206,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/sandawa')
+					axios.get('http://trapiko.herokuapp.com/sandawa')
 					  .then(function (response) {		  	   
 				     chatbotResponse = response.data.qqiqi;					
 					    sendText(sender, chatbotResponse)
@@ -6235,7 +6235,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quimpoblvd')
+					axios.get('http://trapiko.herokuapp.com/quimpoblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mcc;					
 					    sendText(sender, chatbotResponse)
@@ -6267,7 +6267,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quimpoblvd')
+					axios.get('http://trapiko.herokuapp.com/quimpoblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.maaaa;					
 					    sendText(sender, chatbotResponse)
@@ -6298,7 +6298,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";		
 					let chatbotResponse5 = "";	
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mlquezon')
+					axios.get('http://trapiko.herokuapp.com/mlquezon')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.laps;					
 					    sendText(sender, chatbotResponse)
@@ -6332,7 +6332,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";		
 					let chatbotResponse5 = "";	
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mlquezon')
+					axios.get('http://trapiko.herokuapp.com/mlquezon')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.isan;					
 					    sendText(sender, chatbotResponse)
@@ -6368,7 +6368,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";		
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quezonblvd')
+					axios.get('http://trapiko.herokuapp.com/quezonblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.saa;					
 					    sendText(sender, chatbotResponse)
@@ -6401,7 +6401,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";		
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quezonblvd')
+					axios.get('http://trapiko.herokuapp.com/quezonblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.aco;					
 					    sendText(sender, chatbotResponse)
@@ -6432,7 +6432,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 						
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cabaguio')
+					axios.get('http://trapiko.herokuapp.com/cabaguio')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.jjp;					
 					    sendText(sender, chatbotResponse)
@@ -6455,7 +6455,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 						
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cabaguio')
+					axios.get('http://trapiko.herokuapp.com/cabaguio')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.aal;					
 					    sendText(sender, chatbotResponse)
@@ -6478,7 +6478,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 						
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/dacudao')
+					axios.get('http://trapiko.herokuapp.com/dacudao')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.jjjp;					
 					    sendText(sender, chatbotResponse)
@@ -6502,7 +6502,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 						
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/dacudao')
+					axios.get('http://trapiko.herokuapp.com/dacudao')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.lp;					
 					    sendText(sender, chatbotResponse)
@@ -6527,7 +6527,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
 					let chatbotResponse3 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/pichonst')
+					axios.get('http://trapiko.herokuapp.com/pichonst')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ff;					
 					    sendText(sender, chatbotResponse)
@@ -6554,7 +6554,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/sanpedro')
+					axios.get('http://trapiko.herokuapp.com/sanpedro')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mml;					
 					    sendText(sender, chatbotResponse)
@@ -6579,7 +6579,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					//let chatbotResponse2 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/torres')
+					axios.get('http://trapiko.herokuapp.com/torres')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.tjp;					
 					    sendText(sender, chatbotResponse)
@@ -6603,7 +6603,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					//let chatbotResponse2 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/torres')
+					axios.get('http://trapiko.herokuapp.com/torres')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.tff;					
 					    sendText(sender, chatbotResponse)
@@ -6627,7 +6627,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/bonifacio')
+					axios.get('http://trapiko.herokuapp.com/bonifacio')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mml;					
 					    sendText(sender, chatbotResponse)
@@ -6652,7 +6652,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/bonifacio')
+					axios.get('http://trapiko.herokuapp.com/bonifacio')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.cbb;					
 					    sendText(sender, chatbotResponse)
@@ -6677,7 +6677,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mroxas')
+					axios.get('http://trapiko.herokuapp.com/mroxas')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.rmg;					
 					    sendText(sender, chatbotResponse)
@@ -6702,7 +6702,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mroxas')
+					axios.get('http://trapiko.herokuapp.com/mroxas')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.llm;					
 					    sendText(sender, chatbotResponse)
@@ -6730,7 +6730,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse2 = "";
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cmrecto')
+					axios.get('http://trapiko.herokuapp.com/cmrecto')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ppi;					
 					    sendText(sender, chatbotResponse)
@@ -6760,7 +6760,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cbangoy')
+					axios.get('http://trapiko.herokuapp.com/cbangoy')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.eqq;					
 					    sendText(sender, chatbotResponse)
@@ -6785,7 +6785,7 @@ app.post('/webhook/', function(req, res) {
 					sendText(sender, "I guess you mean C. Bangoy north intersections. The traffic congestion in the intersections.")
 						
 					let chatbotResponse = "";		
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cbangoy')
+					axios.get('http://trapiko.herokuapp.com/cbangoy')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.eqq1;					
 					    sendText(sender, chatbotResponse)
@@ -6807,7 +6807,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";		
 					let chatbotResponse2 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/rmagg')
+					axios.get('http://trapiko.herokuapp.com/rmagg')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mell;					
 					    sendText(sender, chatbotResponse)
@@ -6832,7 +6832,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";		
 					let chatbotResponse2 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/rmagg')
+					axios.get('http://trapiko.herokuapp.com/rmagg')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.cba;					
 					    sendText(sender, chatbotResponse)
@@ -6857,7 +6857,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";		
 					let chatbotResponse2 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/sta')
+					axios.get('http://trapiko.herokuapp.com/sta')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.lg;					
 					    sendText(sender, chatbotResponse)
@@ -6882,7 +6882,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";		
 					let chatbotResponse2 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/sta')
+					axios.get('http://trapiko.herokuapp.com/sta')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.jepjpp;					
 					    sendText(sender, chatbotResponse)
@@ -6906,7 +6906,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";		
 					let chatbotResponse2 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/lapulapu')
+					axios.get('http://trapiko.herokuapp.com/lapulapu')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.tta;					
 					    sendText(sender, chatbotResponse)
@@ -6927,7 +6927,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";		
 					let chatbotResponse2 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/lapulapu')
+					axios.get('http://trapiko.herokuapp.com/lapulapu')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.dac;					
 					    sendText(sender, chatbotResponse)
@@ -6948,7 +6948,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";		
 					let chatbotResponse2 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/agadofly')
+					axios.get('http://trapiko.herokuapp.com/agadofly')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.llg;					
 					    sendText(sender, chatbotResponse)
@@ -6971,7 +6971,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";		
 					let chatbotResponse2 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/agadofly')
+					axios.get('http://trapiko.herokuapp.com/agadofly')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.llgs;					
 					    sendText(sender, chatbotResponse)
@@ -6993,7 +6993,7 @@ app.post('/webhook/', function(req, res) {
 					sendText(sender, "I guess you mean R. Castillo north intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/rcastillo')
+					axios.get('http://trapiko.herokuapp.com/rcastillo')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.aggg;					
 					    sendText(sender, chatbotResponse)
@@ -7013,7 +7013,7 @@ app.post('/webhook/', function(req, res) {
 					sendText(sender, "I guess you mean R. Castillo south intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/rcastillo')
+					axios.get('http://trapiko.herokuapp.com/rcastillo')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.jep;					
 					    sendText(sender, chatbotResponse)
@@ -7033,7 +7033,7 @@ app.post('/webhook/', function(req, res) {
 					sendText(sender, "I guess you mean C. P. Garcia south intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/garcia')
+					axios.get('http://trapiko.herokuapp.com/garcia')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.dm;					
 					    sendText(sender, chatbotResponse)
@@ -7053,7 +7053,7 @@ app.post('/webhook/', function(req, res) {
 					sendText(sender, "I guess you mean C. P. Garcia north intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/garcia')
+					axios.get('http://trapiko.herokuapp.com/garcia')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.all;					
 					    sendText(sender, chatbotResponse)
@@ -7077,7 +7077,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					let chatbotResponse4 = "";	
 					let chatbotResponse5 = "";				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/diversion')
+					axios.get('http://trapiko.herokuapp.com/diversion')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.meca;					
 					    sendText(sender, chatbotResponse)
@@ -7109,7 +7109,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					let chatbotResponse4 = "";	
 					let chatbotResponse5 = "";				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/diversion')
+					axios.get('http://trapiko.herokuapp.com/diversion')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.angli;					
 					    sendText(sender, chatbotResponse)
@@ -7139,7 +7139,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quenones')
+					axios.get('http://trapiko.herokuapp.com/quenones')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.quo;					
 					    sendText(sender, chatbotResponse)
@@ -7162,7 +7162,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quenones')
+					axios.get('http://trapiko.herokuapp.com/quenones')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ave;					
 					    sendText(sender, chatbotResponse)
@@ -7185,7 +7185,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/rodri')
+					axios.get('http://trapiko.herokuapp.com/rodri')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.nnarr;					
 					    sendText(sender, chatbotResponse)
@@ -7208,7 +7208,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/rodri')
+					axios.get('http://trapiko.herokuapp.com/rodri')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.divver;					
 					    sendText(sender, chatbotResponse)
@@ -7231,7 +7231,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/maa')
+					axios.get('http://trapiko.herokuapp.com/maa')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.nare;					
 					    sendText(sender, chatbotResponse)
@@ -7254,7 +7254,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/maa')
+					axios.get('http://trapiko.herokuapp.com/maa')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mecc;					
 					    sendText(sender, chatbotResponse)
@@ -7277,7 +7277,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/shrine')
+					axios.get('http://trapiko.herokuapp.com/shrine')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mmmec;					
 					    sendText(sender, chatbotResponse)
@@ -7300,7 +7300,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/shrine')
+					axios.get('http://trapiko.herokuapp.com/shrine')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ddev;					
 					    sendText(sender, chatbotResponse)
@@ -7323,7 +7323,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/angg')
+					axios.get('http://trapiko.herokuapp.com/angg')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ssai;					
 					    sendText(sender, chatbotResponse)
@@ -7348,7 +7348,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";	
 					let chatbotResponse2 = "";	
 									
-					axios.get('https://whispering-inlet-28384.herokuapp.com/angg')
+					axios.get('http://trapiko.herokuapp.com/angg')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.jejeje;					
 					    sendText(sender, chatbotResponse)
@@ -7370,7 +7370,7 @@ app.post('/webhook/', function(req, res) {
 					{
 					sendText(sender, "I guess you mean Buhangin-Cabantian Rd north intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";						
-					axios.get('https://whispering-inlet-28384.herokuapp.com/buhangin')
+					axios.get('http://trapiko.herokuapp.com/buhangin')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ddevs;					
 					    sendText(sender, chatbotResponse)		      	   	
@@ -7386,7 +7386,7 @@ app.post('/webhook/', function(req, res) {
 					{
 					sendText(sender, "I guess you mean Buhangin-Cabantian Rd south intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";						
-					axios.get('https://whispering-inlet-28384.herokuapp.com/buhangin')
+					axios.get('http://trapiko.herokuapp.com/buhangin')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ccp;					
 					    sendText(sender, chatbotResponse)		      	   	
@@ -7403,7 +7403,7 @@ app.post('/webhook/', function(req, res) {
 					{
 					sendText(sender, "I guess you mean Cabantian Rd south intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";						
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cabantian')
+					axios.get('http://trapiko.herokuapp.com/cabantian')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.aale;					
 					    sendText(sender, chatbotResponse)		      	   	
@@ -7420,7 +7420,7 @@ app.post('/webhook/', function(req, res) {
 					{
 					sendText(sender, "I guess you mean Cabantian Rd north intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";						
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cabantian')
+					axios.get('http://trapiko.herokuapp.com/cabantian')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.aalle;					
 					    sendText(sender, chatbotResponse)		      	   	
@@ -7438,7 +7438,7 @@ app.post('/webhook/', function(req, res) {
 					sendText(sender, "I guess you mean Davao Bukdinon Rd north intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";
 					let chatbotResponse1 = "";							
-					axios.get('https://whispering-inlet-28384.herokuapp.com/bukidnon')
+					axios.get('http://trapiko.herokuapp.com/bukidnon')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mama;					
 					    sendText(sender, chatbotResponse)
@@ -7458,7 +7458,7 @@ app.post('/webhook/', function(req, res) {
 					sendText(sender, "I guess you mean Davao Bukdinon Rd north intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";
 					let chatbotResponse1 = "";							
-					axios.get('https://whispering-inlet-28384.herokuapp.com/bukidnon')
+					axios.get('http://trapiko.herokuapp.com/bukidnon')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.qua;					
 					    sendText(sender, chatbotResponse)
@@ -7478,7 +7478,7 @@ app.post('/webhook/', function(req, res) {
 					sendText(sender, "I guess you mean Davao Bukdinon Rd north intersections. The traffic congestion in the intersections.")			
 					let chatbotResponse = "";
 					let chatbotResponse1 = "";							
-					axios.get('https://whispering-inlet-28384.herokuapp.com/bukidnon')
+					axios.get('http://trapiko.herokuapp.com/bukidnon')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mama;					
 					    sendText(sender, chatbotResponse)
@@ -7502,7 +7502,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse = "";
 				let chatbotResponse1 = "";			
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/equirino')
+				axios.get('http://trapiko.herokuapp.com/equirino')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.analysisNorth;
@@ -7532,7 +7532,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse4 = "";	
 					
 			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/equirino')
+					axios.get('http://trapiko.herokuapp.com/equirino')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.jpl;					
@@ -7569,7 +7569,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";		
 			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/equirino')
+					axios.get('http://trapiko.herokuapp.com/equirino')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.arthur;
@@ -7611,7 +7611,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/jp')
+				axios.get('http://trapiko.herokuapp.com/jp')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.analysisNorth;
@@ -7643,7 +7643,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					let chatbotResponse4 = "";	
 					let chatbotResponse5 = "";
-					axios.get('https://whispering-inlet-28384.herokuapp.com/jp')
+					axios.get('http://trapiko.herokuapp.com/jp')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.rs;					
@@ -7687,7 +7687,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					let chatbotResponse4 = "";	
 					let chatbotResponse5 = "";
-					axios.get('https://whispering-inlet-28384.herokuapp.com/jp')
+					axios.get('http://trapiko.herokuapp.com/jp')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.fee;					
@@ -7728,7 +7728,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/mcarthur')
+				axios.get('http://trapiko.herokuapp.com/mcarthur')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.sou;
@@ -7769,7 +7769,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse13 = "";
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mcarthur')
+					axios.get('http://trapiko.herokuapp.com/mcarthur')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.quet;					
@@ -7841,7 +7841,7 @@ app.post('/webhook/', function(req, res) {
 					
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mcarthur')
+					axios.get('http://trapiko.herokuapp.com/mcarthur')
 					  .then(function (response) {
 					  	   
 					    chatbotResponse1 = response.data.qqq;					
@@ -7900,7 +7900,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/ecowestdr')
+				axios.get('http://trapiko.herokuapp.com/ecowestdr')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.South;
@@ -7929,7 +7929,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/ecowestdr')
+				axios.get('http://trapiko.herokuapp.com/ecowestdr')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.qeumpo;
@@ -7958,7 +7958,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/ecowestdr')
+				axios.get('http://trapiko.herokuapp.com/ecowestdr')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.eqq;
@@ -7989,7 +7989,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";		
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/ecoland')
+				axios.get('http://trapiko.herokuapp.com/ecoland')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.QQ;
@@ -8021,7 +8021,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";		
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/ecoland')
+				axios.get('http://trapiko.herokuapp.com/ecoland')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ecoeco;
@@ -8051,7 +8051,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/ecoland')
+				axios.get('http://trapiko.herokuapp.com/ecoland')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ssouth;
@@ -8080,7 +8080,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/matina')
+				axios.get('http://trapiko.herokuapp.com/matina')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.seot;
@@ -8110,7 +8110,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";	
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/matina')
+					axios.get('http://trapiko.herokuapp.com/matina')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.mmc;					
@@ -8139,7 +8139,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
 					let chatbotResponse3 = "";	
-					axios.get('https://whispering-inlet-28384.herokuapp.com/matina')
+					axios.get('http://trapiko.herokuapp.com/matina')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.wwe;					
@@ -8167,7 +8167,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					//let chatbotResponse2 = "";
-					axios.get('https://whispering-inlet-28384.herokuapp.com/tulipdr')
+					axios.get('http://trapiko.herokuapp.com/tulipdr')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.sotht;					
@@ -8191,7 +8191,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
-					axios.get('https://whispering-inlet-28384.herokuapp.com/tulipdr')
+					axios.get('http://trapiko.herokuapp.com/tulipdr')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.mec;					
@@ -8216,7 +8216,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
-					axios.get('https://whispering-inlet-28384.herokuapp.com/tulipdr')
+					axios.get('http://trapiko.herokuapp.com/tulipdr')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.eech;					
@@ -8241,7 +8241,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/sandawa')
+					axios.get('http://trapiko.herokuapp.com/sandawa')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.south;					
@@ -8265,7 +8265,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/sandawa')
+					axios.get('http://trapiko.herokuapp.com/sandawa')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.mecmec;					
@@ -8289,7 +8289,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/sandawa')
+					axios.get('http://trapiko.herokuapp.com/sandawa')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.qqiqi;					
@@ -8312,7 +8312,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";
 				
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quimpoblvd')
+					axios.get('http://trapiko.herokuapp.com/quimpoblvd')
 					  .then(function (response) {		  	   
 					   
 					    chatbotResponse = response.data.south;					
@@ -8339,7 +8339,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quimpoblvd')
+					axios.get('http://trapiko.herokuapp.com/quimpoblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.mcc;					
 					    sendText(sender, chatbotResponse)
@@ -8371,7 +8371,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quimpoblvd')
+					axios.get('http://trapiko.herokuapp.com/quimpoblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.maaaa;					
 					    sendText(sender, chatbotResponse)
@@ -8403,7 +8403,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";		
 					let chatbotResponse5 = "";	
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mlquezon')
+					axios.get('http://trapiko.herokuapp.com/mlquezon')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.isan;					
 					    sendText(sender, chatbotResponse)
@@ -8437,7 +8437,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";		
 					let chatbotResponse5 = "";	
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mlquezon')
+					axios.get('http://trapiko.herokuapp.com/mlquezon')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.laps;					
 					    sendText(sender, chatbotResponse)
@@ -8471,7 +8471,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quezonblvd')
+					axios.get('http://trapiko.herokuapp.com/quezonblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.saa;					
 					    sendText(sender, chatbotResponse)
@@ -8505,7 +8505,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse3 = "";
 					let chatbotResponse4 = "";
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quezonblvd')
+					axios.get('http://trapiko.herokuapp.com/quezonblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.aco;					
 					    sendText(sender, chatbotResponse)
@@ -8539,7 +8539,7 @@ app.post('/webhook/', function(req, res) {
 					
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/quezonblvd')
+					axios.get('http://trapiko.herokuapp.com/quezonblvd')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.que;					
 					    sendText(sender, chatbotResponse)
@@ -8567,7 +8567,7 @@ app.post('/webhook/', function(req, res) {
 					
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cabaguio')
+					axios.get('http://trapiko.herokuapp.com/cabaguio')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ssouth;					
 					    sendText(sender, chatbotResponse)
@@ -8595,7 +8595,7 @@ app.post('/webhook/', function(req, res) {
 					
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cabaguio')
+					axios.get('http://trapiko.herokuapp.com/cabaguio')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.jjp;					
 					    sendText(sender, chatbotResponse)
@@ -8620,7 +8620,7 @@ app.post('/webhook/', function(req, res) {
 					//sendText(sender, "I guess you mean Quimpo Blvd south intersections. The traffic congestion in the intersections.")					
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/cabaguio')
+					axios.get('http://trapiko.herokuapp.com/cabaguio')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.aal;					
 					    sendText(sender, chatbotResponse)
@@ -8648,7 +8648,7 @@ app.post('/webhook/', function(req, res) {
 					
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/mlquezon')
+					axios.get('http://trapiko.herokuapp.com/mlquezon')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.sourth;					
 					    sendText(sender, chatbotResponse)
@@ -8676,7 +8676,7 @@ app.post('/webhook/', function(req, res) {
 					
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/dacudao')
+					axios.get('http://trapiko.herokuapp.com/dacudao')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.dsouth;					
 					    sendText(sender, chatbotResponse)
@@ -8704,7 +8704,7 @@ app.post('/webhook/', function(req, res) {
 					
 					
 					
-					axios.get('https://whispering-inlet-28384.herokuapp.com/dacudao')
+					axios.get('http://trapiko.herokuapp.com/dacudao')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.lp;					
 					    sendText(sender, chatbotResponse)
@@ -8729,7 +8729,7 @@ app.post('/webhook/', function(req, res) {
 					
 					let chatbotResponse = "";	
 					let chatbotResponse1 = "";			
-					axios.get('https://whispering-inlet-28384.herokuapp.com/dacudao')
+					axios.get('http://trapiko.herokuapp.com/dacudao')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.jjjp;					
 					    sendText(sender, chatbotResponse)
@@ -8754,7 +8754,7 @@ app.post('/webhook/', function(req, res) {
 					//sendText(sender, "I guess you mean Quimpo Blvd south intersections. The traffic congestion in the intersections.")					
 					let chatbotResponse = "";	
 						
-					axios.get('https://whispering-inlet-28384.herokuapp.com/pichonst')
+					axios.get('http://trapiko.herokuapp.com/pichonst')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.southh;					
 					    sendText(sender, chatbotResponse)
@@ -8778,7 +8778,7 @@ app.post('/webhook/', function(req, res) {
 					let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
 					let chatbotResponse3 = "";	
-					axios.get('https://whispering-inlet-28384.herokuapp.com/pichonst')
+					axios.get('http://trapiko.herokuapp.com/pichonst')
 					  .then(function (response) {		  	   
 				     	chatbotResponse = response.data.ff;					
 					    sendText(sender, chatbotResponse)
@@ -8807,7 +8807,7 @@ app.post('/webhook/', function(req, res) {
 				//let chatbotResponse1 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/sanpedro')
+				axios.get('http://trapiko.herokuapp.com/sanpedro')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ssa;
@@ -8838,7 +8838,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse3 = "";	
 																	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/sanpedro')
+				axios.get('http://trapiko.herokuapp.com/sanpedro')
 				  .then(function (response) {
 				    //console.log(response);
 				  //  chatbotResponse = response.data.int;
@@ -8870,7 +8870,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				let chatbotResponse2 = "";	
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/torres')
+				axios.get('http://trapiko.herokuapp.com/torres')
 				  .then(function (response) {
 				    //console.log(response);
 				  //  chatbotResponse = response.data.int;
@@ -8900,7 +8900,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				let chatbotResponse2 = "";	
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/torres')
+				axios.get('http://trapiko.herokuapp.com/torres')
 				  .then(function (response) {
 				    //console.log(response);
 				  //  chatbotResponse = response.data.int;
@@ -8930,7 +8930,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				let chatbotResponse2 = "";	
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/torres')
+				axios.get('http://trapiko.herokuapp.com/torres')
 				  .then(function (response) {
 				    //console.log(response);
 				  //  chatbotResponse = response.data.int;
@@ -8960,7 +8960,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				let chatbotResponse2 = "";	
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/bonifacio')
+				axios.get('http://trapiko.herokuapp.com/bonifacio')
 				  .then(function (response) {
 				    //console.log(response);
 				  //  chatbotResponse = response.data.int;
@@ -8990,7 +8990,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse3 = "";	
 				
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/bonifacio')
+				axios.get('http://trapiko.herokuapp.com/bonifacio')
 				  .then(function (response) {
 				    //console.log(response);
 			
@@ -9022,7 +9022,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse3 = "";	
 				
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/bonifacio')
+				axios.get('http://trapiko.herokuapp.com/bonifacio')
 				  .then(function (response) {
 				    //console.log(response);
 			
@@ -9053,7 +9053,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/mroxas')
+				axios.get('http://trapiko.herokuapp.com/mroxas')
 				  .then(function (response) {
 				    //console.log(response);
 			
@@ -9083,7 +9083,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/mroxas')
+				axios.get('http://trapiko.herokuapp.com/mroxas')
 				  .then(function (response) {
 				    //console.log(response);
 			
@@ -9112,7 +9112,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				let chatbotResponse2 = "";
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/mroxas')
+				axios.get('http://trapiko.herokuapp.com/mroxas')
 				  .then(function (response) {
 				    //console.log(response);
 			
@@ -9141,7 +9141,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 			//	let chatbotResponse2 = "";
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cmrecto')
+				axios.get('http://trapiko.herokuapp.com/cmrecto')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.nnorth;
@@ -9171,7 +9171,7 @@ app.post('/webhook/', function(req, res) {
 			   let chatbotResponse4 = "";
 			     let chatbotResponse5 = "";
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cmrecto')
+				axios.get('http://trapiko.herokuapp.com/cmrecto')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ppi;
@@ -9205,7 +9205,7 @@ app.post('/webhook/', function(req, res) {
 			   let chatbotResponse2 = "";
 			  
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cbangoy')
+				axios.get('http://trapiko.herokuapp.com/cbangoy')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ccnorth;
@@ -9233,7 +9233,7 @@ app.post('/webhook/', function(req, res) {
 			   let chatbotResponse2 = "";
 			    let chatbotResponse3 = "";
 			//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cbangoy')
+				axios.get('http://trapiko.herokuapp.com/cbangoy')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.eqq;
@@ -9258,7 +9258,7 @@ app.post('/webhook/', function(req, res) {
 			}if(text == 'C. Bangoy north intersections')
 			{	
 				let chatbotResponse1 = "";	
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cbangoy')
+				axios.get('http://trapiko.herokuapp.com/cbangoy')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.eqq;
@@ -9280,7 +9280,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";		
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rmagg')
+				axios.get('http://trapiko.herokuapp.com/rmagg')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.rnnorth;
@@ -9303,7 +9303,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";	
 				let chatbotResponse3 = "";	
 
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rmagg')
+				axios.get('http://trapiko.herokuapp.com/rmagg')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.mell;
@@ -9328,7 +9328,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";	
 				let chatbotResponse3 = "";	
 
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rmagg')
+				axios.get('http://trapiko.herokuapp.com/rmagg')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.cba;
@@ -9351,7 +9351,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";	
-				axios.get('https://whispering-inlet-28384.herokuapp.com/sta')
+				axios.get('http://trapiko.herokuapp.com/sta')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ssouth;
@@ -9373,7 +9373,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";		
-				axios.get('https://whispering-inlet-28384.herokuapp.com/sta')
+				axios.get('http://trapiko.herokuapp.com/sta')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.lg;
@@ -9397,7 +9397,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";		
-				axios.get('https://whispering-inlet-28384.herokuapp.com/sta')
+				axios.get('http://trapiko.herokuapp.com/sta')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.jepjpp;
@@ -9421,7 +9421,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				
-				axios.get('https://whispering-inlet-28384.herokuapp.com/lapulapu')
+				axios.get('http://trapiko.herokuapp.com/lapulapu')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.dac;
@@ -9443,7 +9443,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				
-				axios.get('https://whispering-inlet-28384.herokuapp.com/lapulapu')
+				axios.get('http://trapiko.herokuapp.com/lapulapu')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.tta;
@@ -9465,7 +9465,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				
-				axios.get('https://whispering-inlet-28384.herokuapp.com/lapulapu')
+				axios.get('http://trapiko.herokuapp.com/lapulapu')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.lnorth;
@@ -9487,7 +9487,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				
-				axios.get('https://whispering-inlet-28384.herokuapp.com/agadofly')
+				axios.get('http://trapiko.herokuapp.com/agadofly')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.asouth;
@@ -9509,7 +9509,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/agadofly')
+				axios.get('http://trapiko.herokuapp.com/agadofly')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.llg;
@@ -9533,7 +9533,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/agadofly')
+				axios.get('http://trapiko.herokuapp.com/agadofly')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.llgs;
@@ -9556,7 +9556,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rcastillo')
+				axios.get('http://trapiko.herokuapp.com/rcastillo')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.jep;
@@ -9577,7 +9577,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rcastillo')
+				axios.get('http://trapiko.herokuapp.com/rcastillo')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.aggg;
@@ -9598,7 +9598,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rcastillo')
+				axios.get('http://trapiko.herokuapp.com/rcastillo')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.rrsouth;
@@ -9619,7 +9619,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/garcia')
+				axios.get('http://trapiko.herokuapp.com/garcia')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ggsouth;
@@ -9640,7 +9640,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/garcia')
+				axios.get('http://trapiko.herokuapp.com/garcia')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.dm;
@@ -9661,7 +9661,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/garcia')
+				axios.get('http://trapiko.herokuapp.com/garcia')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.all;
@@ -9682,7 +9682,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/diversion')
+				axios.get('http://trapiko.herokuapp.com/diversion')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ddsouth;
@@ -9707,7 +9707,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse4 = "";
 				let chatbotResponse5 = "";
 				let chatbotResponse6 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/diversion')
+				axios.get('http://trapiko.herokuapp.com/diversion')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.meca;
@@ -9740,7 +9740,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse4 = "";
 				let chatbotResponse5 = "";
 				let chatbotResponse6 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/diversion')
+				axios.get('http://trapiko.herokuapp.com/diversion')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.angli;
@@ -9769,7 +9769,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/quenones')
+				axios.get('http://trapiko.herokuapp.com/quenones')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.qsouth;
@@ -9791,7 +9791,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/quenones')
+				axios.get('http://trapiko.herokuapp.com/quenones')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.quo;
@@ -9813,7 +9813,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/quenones')
+				axios.get('http://trapiko.herokuapp.com/quenones')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ave;
@@ -9835,7 +9835,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rodri')
+				axios.get('http://trapiko.herokuapp.com/rodri')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.jssouth;
@@ -9857,7 +9857,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rodri')
+				axios.get('http://trapiko.herokuapp.com/rodri')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.nnarr;
@@ -9879,7 +9879,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rodri')
+				axios.get('http://trapiko.herokuapp.com/rodri')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.divver;
@@ -9901,7 +9901,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/maa')
+				axios.get('http://trapiko.herokuapp.com/maa')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.mmsouth;
@@ -9923,7 +9923,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/maa')
+				axios.get('http://trapiko.herokuapp.com/maa')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.nare;
@@ -9945,7 +9945,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/maa')
+				axios.get('http://trapiko.herokuapp.com/maa')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.narer;
@@ -9967,7 +9967,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/shrine')
+				axios.get('http://trapiko.herokuapp.com/shrine')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.sssouth;
@@ -9989,7 +9989,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/shrine')
+				axios.get('http://trapiko.herokuapp.com/shrine')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.mmmec;
@@ -10011,7 +10011,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/shrine')
+				axios.get('http://trapiko.herokuapp.com/shrine')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ddev;
@@ -10033,7 +10033,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/angg')
+				axios.get('http://trapiko.herokuapp.com/angg')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.aasouth;
@@ -10056,7 +10056,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/angg')
+				axios.get('http://trapiko.herokuapp.com/angg')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ssai;
@@ -10081,7 +10081,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/angg')
+				axios.get('http://trapiko.herokuapp.com/angg')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.jejeje;
@@ -10105,7 +10105,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/buhangin')
+				axios.get('http://trapiko.herokuapp.com/buhangin')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.bbsouth;
@@ -10126,7 +10126,7 @@ app.post('/webhook/', function(req, res) {
 			}if(text == 'Buhangin-Cabantian Rd south intersections')
 			{	
 				let chatbotResponse1 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/buhangin')
+				axios.get('http://trapiko.herokuapp.com/buhangin')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.cpp;
@@ -10144,7 +10144,7 @@ app.post('/webhook/', function(req, res) {
 			}if(text == 'Buhangin-Cabantian Rd north intersections')
 			{	
 				let chatbotResponse1 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/buhangin')
+				axios.get('http://trapiko.herokuapp.com/buhangin')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ddevs;
@@ -10163,7 +10163,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cabantian')
+				axios.get('http://trapiko.herokuapp.com/cabantian')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.ccssouth;
@@ -10183,7 +10183,7 @@ app.post('/webhook/', function(req, res) {
 			}if(text == 'Cabantian Rd south intersections')
 			{	
 				let chatbotResponse1 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cabantian')
+				axios.get('http://trapiko.herokuapp.com/cabantian')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.aale;
@@ -10201,7 +10201,7 @@ app.post('/webhook/', function(req, res) {
 			}if(text == 'Cabantian Rd north intersections')
 			{	
 				let chatbotResponse1 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cabantian')
+				axios.get('http://trapiko.herokuapp.com/cabantian')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.aalle;
@@ -10220,7 +10220,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/bukidnon')
+				axios.get('http://trapiko.herokuapp.com/bukidnon')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.bbsouth;
@@ -10241,7 +10241,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/bukidnon')
+				axios.get('http://trapiko.herokuapp.com/bukidnon')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.qua;
@@ -10262,7 +10262,7 @@ app.post('/webhook/', function(req, res) {
 			{	
 				let chatbotResponse1 = "";
 					let chatbotResponse2 = "";
-				axios.get('https://whispering-inlet-28384.herokuapp.com/bukidnon')
+				axios.get('http://trapiko.herokuapp.com/bukidnon')
 				  .then(function (response) {
 				    //console.log(response);
 				 chatbotResponse1 = response.data.mama;
@@ -10287,7 +10287,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 				sendText(sender, "I guess you mean  " +equirinsouth+". The traffic congestion in this road.")			
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/equirino')
+				axios.get('http://trapiko.herokuapp.com/equirino')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.analysisNorth;
@@ -10317,7 +10317,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";		
 				sendText(sender, "I guess you mean J. P. Laurel. The traffic congestion in this road.")	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/jp')
+				axios.get('http://trapiko.herokuapp.com/jp')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.analysisNorth;
@@ -10346,7 +10346,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";		
 				sendText(sender, "I guess you mean Mac Arthur Hwy. The traffic congestion in this road.")	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/mcarthur')
+				axios.get('http://trapiko.herokuapp.com/mcarthur')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.sou;
@@ -10375,7 +10375,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";		
 				sendText(sender, "I guess you mean Eco West Dr. The traffic congestion in this road.")	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/ecowestdr')
+				axios.get('http://trapiko.herokuapp.com/ecowestdr')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.South;
@@ -10404,7 +10404,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Ecoland. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/ecoland')
+				axios.get('http://trapiko.herokuapp.com/ecoland')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ssouth;
@@ -10433,7 +10433,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Matina Aplaya Rd. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/matina')
+				axios.get('http://trapiko.herokuapp.com/matina')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.nert;
@@ -10461,7 +10461,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/tulipdr')
+				axios.get('http://trapiko.herokuapp.com/tulipdr')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.sotht;
@@ -10489,7 +10489,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Sandawa. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/sandawa')
+				axios.get('http://trapiko.herokuapp.com/sandawa')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.south;
@@ -10517,7 +10517,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Quimpo Blvd. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/quimpoblvd')
+				axios.get('http://trapiko.herokuapp.com/quimpoblvd')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.south;
@@ -10545,7 +10545,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean M. L. Quezon Blvd. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/mlquezon')
+				axios.get('http://trapiko.herokuapp.com/mlquezon')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.sourth;
@@ -10573,7 +10573,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Quezon Blvd. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/quezonblvd')
+				axios.get('http://trapiko.herokuapp.com/quezonblvd')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.que;
@@ -10601,7 +10601,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Cabaguio Ave. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cabaguio')
+				axios.get('http://trapiko.herokuapp.com/cabaguio')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ssouth;
@@ -10630,7 +10630,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Dacudao Ave. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/dacudao')
+				axios.get('http://trapiko.herokuapp.com/dacudao')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.dsouth;
@@ -10658,7 +10658,7 @@ app.post('/webhook/', function(req, res) {
 				//let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Pichon St. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/pichonst')
+				axios.get('http://trapiko.herokuapp.com/pichonst')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.southh;
@@ -10686,7 +10686,7 @@ app.post('/webhook/', function(req, res) {
 				//let chatbotResponse1 = "";	
 				sendText(sender, "I guess you mean Sanpedro St. The traffic congestion in this road.")		
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/sanpedro')
+				axios.get('http://trapiko.herokuapp.com/sanpedro')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ssa;
@@ -10714,7 +10714,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/torres')
+				axios.get('http://trapiko.herokuapp.com/torres')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.tssouth;
@@ -10742,7 +10742,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/bonifacio')
+				axios.get('http://trapiko.herokuapp.com/bonifacio')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.bbsouth;
@@ -10770,7 +10770,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";	
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/mroxas')
+				axios.get('http://trapiko.herokuapp.com/mroxas')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.mmsouth;
@@ -10799,7 +10799,7 @@ app.post('/webhook/', function(req, res) {
 				
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cmrecto')
+				axios.get('http://trapiko.herokuapp.com/cmrecto')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.nnorth;
@@ -10826,7 +10826,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse1 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cbangoy')
+				axios.get('http://trapiko.herokuapp.com/cbangoy')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ccsouth;
@@ -10854,7 +10854,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rmagg')
+				axios.get('http://trapiko.herokuapp.com/rmagg')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.rssouth;
@@ -10880,7 +10880,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/sta')
+				axios.get('http://trapiko.herokuapp.com/sta')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ssouth;
@@ -10906,7 +10906,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/lapulapu')
+				axios.get('http://trapiko.herokuapp.com/lapulapu')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.lnorth;
@@ -10932,7 +10932,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/agadofly')
+				axios.get('http://trapiko.herokuapp.com/agadofly')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.anorth;
@@ -10958,7 +10958,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rcastillo')
+				axios.get('http://trapiko.herokuapp.com/rcastillo')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.rrsouth;
@@ -10984,7 +10984,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/garcia')
+				axios.get('http://trapiko.herokuapp.com/garcia')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ggsouth;
@@ -11010,7 +11010,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/diversion')
+				axios.get('http://trapiko.herokuapp.com/diversion')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ddsouth;
@@ -11036,7 +11036,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/quenones')
+				axios.get('http://trapiko.herokuapp.com/quenones')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.qsouth;
@@ -11062,7 +11062,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/rodri')
+				axios.get('http://trapiko.herokuapp.com/rodri')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.jssouth;
@@ -11088,7 +11088,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/maa')
+				axios.get('http://trapiko.herokuapp.com/maa')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.mmsouth;
@@ -11114,7 +11114,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/shrine')
+				axios.get('http://trapiko.herokuapp.com/shrine')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.sssouth;
@@ -11140,7 +11140,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/angg')
+				axios.get('http://trapiko.herokuapp.com/angg')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.aasouth;
@@ -11166,7 +11166,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/buhangin')
+				axios.get('http://trapiko.herokuapp.com/buhangin')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.bbsouth;
@@ -11192,7 +11192,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/cabantian')
+				axios.get('http://trapiko.herokuapp.com/cabantian')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.ccssouth;
@@ -11218,7 +11218,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 					
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://whispering-inlet-28384.herokuapp.com/bukidnon')
+				axios.get('http://trapiko.herokuapp.com/bukidnon')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.bbsouth;
