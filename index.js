@@ -36,7 +36,7 @@ let token = "EAAimrKFwRkIBANhp34pVkXyR2joBUq9INneq877fwSZA0Soszdaeb63x4qBIf2xZCi
 // Facebook 
 
 app.get('/webhook/', function(req, res) {
-	if (req.query['hub.verify_token'] === "Hi") {
+	if (req.query['hub.verify_token'] === "Henlo") {
 		res.send(req.query['hub.challenge'])
 	}
 	res.send("Wrong token")
