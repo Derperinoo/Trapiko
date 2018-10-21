@@ -1541,7 +1541,7 @@ app.post('/webhook/', function(req, res) {
 			var a  = ' ';
 		//	streetj = body.RWS[0].RW[3].DE;
 			if(text.includes('quirino north') || text.includes("Quirino North")|| text.includes("quirino North")){
-				 sendText(sender, "I guess you mean"+a+equirino1+a+"north intersections. The traffic status for the intersections.")
+				sendText(sender, "I guess you mean"+a+equirino1+a+"north intersections. The traffic status for the intersections.")
 				let chatbotResponse = "";
 				let chatbotResponse1 = "";
 				let chatbotResponse2 = "";
@@ -1567,29 +1567,30 @@ app.post('/webhook/', function(req, res) {
 				    sendText(sender, chatbotResponse)
 				  });
 				  break;
-				}else if(text.includes('quirino south') || text.includes("Quirino South")|| text.includes("quirino South")){
-				 sendText(sender, "I guess you mean"+a+equirino1+a+"south intersections. The traffic status for the intersections.")
-				let chatbotResponse = "";
-				let chatbotResponse1 = "";
-				let chatbotResponse2 = "";
-				let chatbotResponse3 = "";
-				let chatbotResponse4 = "";	
+				}
+				else if(text.includes('quirino south') || text.includes("Quirino South")|| text.includes("quirino South")){
+					sendText(sender, "I guess you mean"+a+equirino1+a+"south intersections. The traffic status for the intersections.")
+					let chatbotResponse = "";
+					let chatbotResponse1 = "";
+					let chatbotResponse2 = "";
+					let chatbotResponse3 = "";
+					let chatbotResponse4 = "";	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('http://trapiko.herokuapp.com/equirino')
-				  .then(function (response) {
+					axios.get('http://trapiko.herokuapp.com/equirino')
+				  		.then(function (response) {
 				    //console.log(response);
-				    chatbotResponse = response.data.analysisjf6;
-				    sendText(sender, chatbotResponse)
-				    chatbotResponse1 = response.data.analysisjf7;
-				    sendText(sender, chatbotResponse1)
-				    chatbotResponse2 = response.data.analysisjf8;
-				    sendText(sender, chatbotResponse2)
-				    chatbotResponse3 = response.data.analysisjf9;
-				    sendText(sender, chatbotResponse3)
-				    chatbotResponse4 = response.data.analysisjf10;
-				    sendText(sender, chatbotResponse4)
-				  })
-				  .catch(function (error) {
+				    	chatbotResponse = response.data.analysisjf6;
+				    	sendText(sender, chatbotResponse)
+				    	chatbotResponse1 = response.data.analysisjf7;
+				    	sendText(sender, chatbotResponse1)
+				    	chatbotResponse2 = response.data.analysisjf8;
+				    	sendText(sender, chatbotResponse2)
+				    	chatbotResponse3 = response.data.analysisjf9;
+				    	sendText(sender, chatbotResponse3)
+				    	chatbotResponse4 = response.data.analysisjf10;
+				    	sendText(sender, chatbotResponse4)
+				 	})
+				  	.catch(function (error) {
 				    //console.log(error);
 				    chatbotResponse = "not ok";
 				    sendText(sender, chatbotResponse)
@@ -1597,54 +1598,54 @@ app.post('/webhook/', function(req, res) {
 				  break;
 				}else if(text== ''+equirino1+a+'south intersections'){
 				 //sendText(sender, "I guess you mean"+a+street+a+"north intersections. The traffic status for the intersections.")
-				let chatbotResponse = "";
-				let chatbotResponse1 = "";
-				let chatbotResponse2 = "";
-				let chatbotResponse3 = "";
-				let chatbotResponse4 = "";	
+					let chatbotResponse = "";
+					let chatbotResponse1 = "";
+					let chatbotResponse2 = "";
+					let chatbotResponse3 = "";
+					let chatbotResponse4 = "";	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('http://trapiko.herokuapp.com/equirino')
-				  .then(function (response) {
+					axios.get('http://trapiko.herokuapp.com/equirino')
+				  		.then(function (response) {
 				    //console.log(response);
-				    chatbotResponse = response.data.analysisjf1;
-				    sendText(sender, chatbotResponse)
-				    chatbotResponse1 = response.data.analysisjf2;
-				    sendText(sender, chatbotResponse1)
-				    chatbotResponse2 = response.data.analysisjf3;
-				    sendText(sender, chatbotResponse2)
-				    chatbotResponse3 = response.data.analysisjf4;
-				    sendText(sender, chatbotResponse3)
-				    chatbotResponse4 = response.data.analysisjf5;
-				    sendText(sender, chatbotResponse4)
-				  })
-				  .catch(function (error) {
+				   		chatbotResponse = response.data.analysisjf1;
+				    	sendText(sender, chatbotResponse)
+				    	chatbotResponse1 = response.data.analysisjf2;
+				    	sendText(sender, chatbotResponse1)
+				    	chatbotResponse2 = response.data.analysisjf3;
+				    	sendText(sender, chatbotResponse2)
+				    	chatbotResponse3 = response.data.analysisjf4;
+				    	sendText(sender, chatbotResponse3)
+				    	chatbotResponse4 = response.data.analysisjf5;
+				    	sendText(sender, chatbotResponse4)
+				  	})
+				  	.catch(function (error) {
 				    chatbotResponse = "not ok";
 				    sendText(sender, chatbotResponse)
 				  });
 				  break;
 				}else if(text== ''+equirino1+a+'north intersections'){
 				 //sendText(sender, "I guess you mean"+a+street+a+"north intersections. The traffic status for the intersections.")
-				let chatbotResponse = "";
-				let chatbotResponse1 = "";
-				let chatbotResponse2 = "";
-				let chatbotResponse3 = "";
-				let chatbotResponse4 = "";	
+					let chatbotResponse = "";
+					let chatbotResponse1 = "";
+					let chatbotResponse2 = "";
+					let chatbotResponse3 = "";
+					let chatbotResponse4 = "";	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('http://trapiko.herokuapp.com/equirino')
-				  .then(function (response) {
+					axios.get('http://trapiko.herokuapp.com/equirino')
+				  		.then(function (response) {
 				    //console.log(response);
-				    chatbotResponse = response.data.analysisjf6;
-				    sendText(sender, chatbotResponse)
-				    chatbotResponse1 = response.data.analysisjf7;
-				    sendText(sender, chatbotResponse1)
-				    chatbotResponse2 = response.data.analysisjf8;
-				    sendText(sender, chatbotResponse2)
-				    chatbotResponse3 = response.data.analysisjf9;
-				    sendText(sender, chatbotResponse3)
-				    chatbotResponse4 = response.data.analysisjf10;
-				    sendText(sender, chatbotResponse4)
-				  })
-				  .catch(function (error) {
+				    	chatbotResponse = response.data.analysisjf6;
+				    	sendText(sender, chatbotResponse)
+				    	chatbotResponse1 = response.data.analysisjf7;
+				    	sendText(sender, chatbotResponse1)
+				    	chatbotResponse2 = response.data.analysisjf8;
+				    	sendText(sender, chatbotResponse2)
+				    	chatbotResponse3 = response.data.analysisjf9;
+				    	sendText(sender, chatbotResponse3)
+				    	chatbotResponse4 = response.data.analysisjf10;
+				    	sendText(sender, chatbotResponse4)
+				  	})
+				  	.catch(function (error) {
 				    chatbotResponse = "not ok";
 				    sendText(sender, chatbotResponse)
 				  });
