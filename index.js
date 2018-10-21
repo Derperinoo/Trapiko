@@ -36,7 +36,7 @@ let token = "EAAimrKFwRkIBANhp34pVkXyR2joBUq9INneq877fwSZA0Soszdaeb63x4qBIf2xZCi
 // Facebook 
 
 app.get('/webhook/', function(req, res) {
-	if (req.query['hub.verify_token'] === "wow") {
+	if (req.query['hub.verify_token'] === "Hi") {
 		res.send(req.query['hub.challenge'])
 	}
 	res.send("Wrong token")
@@ -1444,7 +1444,7 @@ app.get('/equirino',function(_req, _res){
 //-------------------------------------------
 
 app.get('/geo',function(req, res){
-	axios.get('https://fathomless-escarpment-16808.herokuapp.com/equirino')
+	axios.get('http://trapiko.herokuapp.com/equirino')
 	  .then(function (response) {
 	    console.log(response.data);
 	  
@@ -1455,7 +1455,7 @@ app.get('/geo',function(req, res){
 	  });
 })
 // app.get('/geo',function(req, res){
-// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/jplauel')
+// 	axios.get('http://trapiko.herokuapp.com/jplauel')
 // 	  .then(function (response) {
 // 	    console.log(response.data);	  
 // 	  })
@@ -1465,7 +1465,7 @@ app.get('/geo',function(req, res){
 // 	  });
 // })
 // app.get('/geo',function(req, res){
-// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/mcarthur')
+// 	axios.get('http://trapiko.herokuapp.com/mcarthur')
 // 	  .then(function (response) {
 // 	    console.log(response.data);	  
 // 	  })
@@ -1475,7 +1475,7 @@ app.get('/geo',function(req, res){
 // 	  });
 // })
 // app.get('/geo',function(req, res){
-// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecowestdr')
+// 	axios.get('http://trapiko.herokuapp.com/ecowestdr')
 // 	  .then(function (response) {
 // 	    console.log(response.data);	  
 // 	  })
@@ -1485,7 +1485,7 @@ app.get('/geo',function(req, res){
 // 	  });
 // })
 // app.get('/geo',function(req, res){
-// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/matinaaplaya')
+// 	axios.get('http://trapiko.herokuapp.com/matinaaplaya')
 // 	  .then(function (response) {
 // 	    console.log(response.data);	  
 // 	  })
@@ -1495,7 +1495,7 @@ app.get('/geo',function(req, res){
 // 	  });
 // })
 // app.get('/geo',function(req, res){
-// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecoland')
+// 	axios.get('http://trapiko.herokuapp.com/ecoland')
 // 	  .then(function (response) {
 // 	    console.log(response.data);	  
 // 	  })
@@ -1505,7 +1505,7 @@ app.get('/geo',function(req, res){
 // 	  });
 // })
 // app.get('/geo',function(req, res){
-// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/tulipdr')
+// 	axios.get('http://trapiko.herokuapp.com/tulipdr')
 // 	  .then(function (response) {
 // 	    console.log(response.data);	  
 // 	  })
@@ -1515,7 +1515,7 @@ app.get('/geo',function(req, res){
 // 	  });
 // })
 // app.get('/geo',function(req, res){
-// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/quimpoblvd')
+// 	axios.get('http://trapiko.herokuapp.com/quimpoblvd')
 // 	  .then(function (response) {
 // 	    console.log(response.data);	  
 // 	  })
@@ -1547,7 +1547,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse2 = "";
 				let chatbotResponse3 = "";
 				let chatbotResponse4 = "";	
-				axios.get('https://fathomless-escarpment-16808.herokuapp.com/equirino')
+				axios.get('http://trapiko.herokuapp.com/equirino')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.analysisjf1;
@@ -1575,7 +1575,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse3 = "";
 				let chatbotResponse4 = "";	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://fathomless-escarpment-16808.herokuapp.com/equirino')
+				axios.get('http://trapiko.herokuapp.com/equirino')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.analysisjf6;
@@ -1603,7 +1603,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse3 = "";
 				let chatbotResponse4 = "";	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://fathomless-escarpment-16808.herokuapp.com/equirino')
+				axios.get('http://trapiko.herokuapp.com/equirino')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.analysisjf1;
@@ -1630,7 +1630,7 @@ app.post('/webhook/', function(req, res) {
 				let chatbotResponse3 = "";
 				let chatbotResponse4 = "";	
 				//source : https://www.npmjs.com/package/axios
-				axios.get('https://fathomless-escarpment-16808.herokuapp.com/equirino')
+				axios.get('http://trapiko.herokuapp.com/equirino')
 				  .then(function (response) {
 				    //console.log(response);
 				    chatbotResponse = response.data.analysisjf6;
@@ -1658,7 +1658,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse3 = "";
 			// 	let chatbotResponse4 = "";
 			// 	let chatbotResponse5 = "";	
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/jplaurel')
+			// 	axios.get('http://trapiko.herokuapp.com/jplaurel')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysisjp1;
@@ -1688,7 +1688,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse3 = "";
 			// 	let chatbotResponse4 = "";
 			// 	let chatbotResponse5 = "";	
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/jplaurel')
+			// 	axios.get('http://trapiko.herokuapp.com/jplaurel')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysisjp01;
@@ -1718,7 +1718,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse3 = "";
 			// 	let chatbotResponse4 = "";
 			// 	let chatbotResponse5 = "";	
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/jplaurel')
+			// 	axios.get('http://trapiko.herokuapp.com/jplaurel')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysisjp01;
@@ -1749,7 +1749,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse3 = "";
 			// 	let chatbotResponse4 = "";
 			// 	let chatbotResponse5 = "";	
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/jplaurel')
+			// 	axios.get('http://trapiko.herokuapp.com/jplaurel')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysisjp1;
@@ -1788,7 +1788,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse12 = "";
 			// 	let chatbotResponse13 = "";	
 			// 	let chatbotResponse14 = "";		
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/mcarthur')
+			// 	axios.get('http://trapiko.herokuapp.com/mcarthur')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis35;
@@ -1846,7 +1846,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse12 = "";
 			// 	let chatbotResponse13 = "";	
 			// 	let chatbotResponse14 = "";		
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/mcarthur')
+			// 	axios.get('http://trapiko.herokuapp.com/mcarthur')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis222;
@@ -1904,7 +1904,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse12 = "";
 			// 	let chatbotResponse13 = "";	
 			// 	let chatbotResponse14 = "";		
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/mcarthur')
+			// 	axios.get('http://trapiko.herokuapp.com/mcarthur')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis35;
@@ -1961,7 +1961,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse12 = "";
 			// 	let chatbotResponse13 = "";	
 			// 	let chatbotResponse14 = "";		
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/mcarthur')
+			// 	axios.get('http://trapiko.herokuapp.com/mcarthur')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis222;
@@ -2004,7 +2004,7 @@ app.post('/webhook/', function(req, res) {
 			// 	sendText(sender, "I guess you mean"+a+streetec+a+"north intersections. The traffic status for the intersections.")
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecowestdr')
+			// 	axios.get('http://trapiko.herokuapp.com/ecowestdr')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis05;
@@ -2023,7 +2023,7 @@ app.post('/webhook/', function(req, res) {
 			// 	sendText(sender, "I guess you mean"+a+streetec+a+"south intersections. The traffic status for the intersections.")
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecowestdr')
+			// 	axios.get('http://trapiko.herokuapp.com/ecowestdr')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis5;
@@ -2042,7 +2042,7 @@ app.post('/webhook/', function(req, res) {
 			// //	sendText(sender, "I guess you mean"+a+streetec+a+"south intersections. The traffic status for the intersections.")
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecowestdr')
+			// 	axios.get('http://trapiko.herokuapp.com/ecowestdr')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis5;
@@ -2061,7 +2061,7 @@ app.post('/webhook/', function(req, res) {
 			// //	sendText(sender, "I guess you mean"+a+streetec+a+"south intersections. The traffic status for the intersections.")
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecowestdr')
+			// 	axios.get('http://trapiko.herokuapp.com/ecowestdr')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis05;
@@ -2081,7 +2081,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
 			// 	let chatbotResponse3 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/matinaaplaya')
+			// 	axios.get('http://trapiko.herokuapp.com/matinaaplaya')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis9;
@@ -2105,7 +2105,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
 			// 	let chatbotResponse3 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/matinaaplaya')
+			// 	axios.get('http://trapiko.herokuapp.com/matinaaplaya')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis09;
@@ -2128,7 +2128,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
 			// 	let chatbotResponse3 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/matinaaplaya')
+			// 	axios.get('http://trapiko.herokuapp.com/matinaaplaya')
 			// 	  .then(function (response) {
 			// 	    //console.log(response);
 			// 	    chatbotResponse = response.data.analysis9;
@@ -2151,7 +2151,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
 			// 	let chatbotResponse3 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/matinaaplaya')
+			// 	axios.get('http://trapiko.herokuapp.com/matinaaplaya')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis09;
 			// 	    sendText(sender, chatbotResponse)
@@ -2173,7 +2173,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecoland')
+			// 	axios.get('http://trapiko.herokuapp.com/ecoland')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis10;
 			// 	    sendText(sender, chatbotResponse)
@@ -2194,7 +2194,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
 			// 	let chatbotResponse3 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecoland')
+			// 	axios.get('http://trapiko.herokuapp.com/ecoland')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis09;
 			// 	    sendText(sender, chatbotResponse)
@@ -2215,7 +2215,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecoland')
+			// 	axios.get('http://trapiko.herokuapp.com/ecoland')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis10;
 			// 	    sendText(sender, chatbotResponse)
@@ -2235,7 +2235,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
 			// 	let chatbotResponse3 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/ecoland')
+			// 	axios.get('http://trapiko.herokuapp.com/ecoland')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis09;
 			// 	    sendText(sender, chatbotResponse)
@@ -2256,7 +2256,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/tulipdr')
+			// 	axios.get('http://trapiko.herokuapp.com/tulipdr')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis12;
 			// 	    sendText(sender, chatbotResponse)
@@ -2275,7 +2275,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/tulipdr')
+			// 	axios.get('http://trapiko.herokuapp.com/tulipdr')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis111;
 			// 	    sendText(sender, chatbotResponse)
@@ -2295,7 +2295,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/tulipdr')
+			// 	axios.get('http://trapiko.herokuapp.com/tulipdr')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis12;
 			// 	    sendText(sender, chatbotResponse)
@@ -2315,7 +2315,7 @@ app.post('/webhook/', function(req, res) {
 			// 	let chatbotResponse = "";
 			// 	let chatbotResponse1 = "";
 			// 	let chatbotResponse2 = "";
-			// 	axios.get('https://fathomless-escarpment-16808.herokuapp.com/tulipdr')
+			// 	axios.get('http://trapiko.herokuapp.com/tulipdr')
 			// 	  .then(function (response) {
 			// 	    chatbotResponse = response.data.analysis111;
 			// 	    sendText(sender, chatbotResponse)
